@@ -1,0 +1,3347 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume_BD_ClaudeAI</title>
+<style>
+    :root {
+        --h1-color: #1e3a8a;
+        --h2-color: #2563eb;
+        --h3-color: #059669;
+        --text-color: #1f2937;
+        --bg-color: #ffffff;
+        --code-bg: #f3f4f6;
+        --border-color: #e5e7eb;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    @page { size: A4; margin: 1.5cm; }
+    
+    body { 
+        font-family: 'Georgia', 'Times New Roman', serif; 
+        font-size: 11pt; 
+        line-height: 1.6; 
+        color: var(--text-color); 
+        background: var(--bg-color);
+        max-width: 850px;
+        margin: 0 auto;
+        padding: 50px 40px;
+    }
+
+    /* TOC Styling */
+    .toc {
+        background: #f8fafc;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 40px;
+        border: 1px solid var(--border-color);
+    }
+    .toc ul { list-style: none; padding-left: 0; }
+    .toc li { margin-bottom: 5px; }
+    .toc a { text-decoration: none; color: var(--h2-color); font-weight: 500; }
+    .toc a:hover { text-decoration: underline; }
+    
+    h1 { 
+        text-align: center; 
+        color: var(--h1-color); 
+        font-size: 2.2em; 
+        margin-bottom: 20px;
+        font-weight: 800;
+        border-bottom: 4px solid var(--h1-color);
+        padding-bottom: 15px;
+        text-transform: uppercase;
+    }
+    
+    h2 {
+        color: var(--h2-color);
+        font-size: 1.6em;
+        margin-top: 40px;
+        margin-bottom: 15px;
+        border-bottom: 2px solid var(--border-color);
+        padding-bottom: 8px;
+        font-weight: 700;
+    }
+    
+    h3 {
+        color: var(--h3-color);
+        font-size: 1.3em;
+        margin-top: 30px;
+        margin-bottom: 12px;
+        font-weight: 600;
+    }
+    
+    p { margin-bottom: 16px; text-align: justify; }
+    
+    /* Lists */
+    ul, ol { margin: 15px 0 15px 30px; }
+    li { margin-bottom: 8px; }
+    
+    /* Tables */
+    table { 
+        width: 100%; 
+        border-collapse: collapse; 
+        margin: 25px 0; 
+        font-size: 10pt;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+    th { 
+        background-color: #f9fafb; 
+        color: var(--h1-color); 
+        padding: 12px; 
+        border: 1px solid var(--border-color);
+        text-align: left;
+    }
+    td { 
+        padding: 10px 12px; 
+        border: 1px solid var(--border-color); 
+    }
+    tr:nth-child(even) { background-color: #fdfdfd; }
+    
+    /* Code blocks */
+    code {
+        background: var(--code-bg);
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-family: 'Cascadia Code', 'Fira Code', 'Courier New', monospace;
+        font-size: 0.9em;
+        color: #d946ef;
+    }
+    
+    pre {
+        background: #1e293b;
+        color: #e2e8f0;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 20px 0;
+        overflow-x: auto;
+        font-family: 'Cascadia Code', 'Fira Code', monospace;
+        font-size: 9.5pt;
+        line-height: 1.5;
+    }
+    
+    pre code {
+        background: none;
+        padding: 0;
+        color: inherit;
+        font-size: inherit;
+    }
+    
+    /* Horizontal Rule */
+    hr {
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+        margin: 40px 0;
+    }
+
+    blockquote {
+        border-left: 5px solid var(--h3-color);
+        background: #f0fdf4;
+        padding: 15px 25px;
+        margin: 20px 0;
+        font-style: italic;
+        color: #065f46;
+        border-radius: 0 8px 8px 0;
+    }
+
+    a { color: var(--h2-color); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Print adjustments */
+    @media print {
+        body { padding: 0; max-width: 100%; }
+        .toc { display: none; }
+        h2, h3 { page-break-after: avoid; }
+        pre, table { page-break-inside: avoid; }
+    }
+</style>
+</head>
+<body>
+    <h1>Resume_BD_ClaudeAI</h1>
+    <div class="toc no-print">
+        <strong>📌 Sommaire</strong>
+        <div class="toc">
+<ul></ul>
+</div>
+    </div>
+    <div class="content">
+        <h1 id="resume-complet-du-cours-big-data-20252026">Résumé complet du cours Big Data 2025/2026</h1>
+<h2 id="m-madani-rabie">M. MADANI Rabie</h2>
+<hr />
+<h2 id="objectifs-du-cours">📋 Objectifs du cours</h2>
+<ul>
+<li>Comprendre le phénomène du Big Data et les concepts qu'il englobe</li>
+<li>Maîtriser l'architecture de Hadoop, son administration ainsi que le composant MapReduce</li>
+<li>Explorer l'écosystème Hadoop et ses principaux composants (Sqoop, Hive, Pig, Flume, etc.)</li>
+<li>Manipuler l'écosystème Spark et ses différents composants</li>
+</ul>
+<hr />
+<h1 id="partie-1-introduction-au-big-data">📘 Partie 1 : Introduction au Big Data</h1>
+<h2 id="11-contexte-general-lexplosion-des-donnees">1.1 Contexte général : L'explosion des données</h2>
+<h3 id="unites-de-mesure-des-donnees">Unités de mesure des données</h3>
+<p>Les volumes de données sont devenus si importants qu'ils nécessitent de nouvelles unités de mesure :</p>
+<table>
+<thead>
+<tr>
+<th>Unité</th>
+<th>Symbole</th>
+<th>Équivalence en Go</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Gigaoctet</strong></td>
+<td>Go (GB)</td>
+<td>1 Go</td>
+</tr>
+<tr>
+<td><strong>Téraoctet</strong></td>
+<td>To (TB)</td>
+<td>1 000 Go</td>
+</tr>
+<tr>
+<td><strong>Pétaoctet</strong></td>
+<td>Po (PB)</td>
+<td>1 000 000 Go (10⁶ Go)</td>
+</tr>
+<tr>
+<td><strong>Exaoctet</strong></td>
+<td>Eo (EB)</td>
+<td>1 000 000 000 Go (10⁹ Go)</td>
+</tr>
+<tr>
+<td><strong>Zettaoctet</strong></td>
+<td>Zo (ZB)</td>
+<td>1 000 000 000 000 Go (10¹² Go)</td>
+</tr>
+<tr>
+<td><strong>Yottaoctet</strong></td>
+<td>Yo (YB)</td>
+<td>1 000 000 000 000 000 Go (10¹⁵ Go)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Chiffre clé</strong> : La production mondiale de données est estimée à environ <strong>175 Zettaoctets par an</strong> d'ici la fin de 2025.</p>
+</blockquote>
+<h3 id="limites-des-systemes-traditionnels">Limites des systèmes traditionnels</h3>
+<p>Les systèmes informatiques classiques (bases de données relationnelles traditionnelles) ne sont plus adaptés pour :
+- Stocker des volumes massifs de données
+- Traiter des données en temps réel
+- Gérer la variété des formats de données
+- Maintenir les performances face à la croissance exponentielle</p>
+<blockquote>
+<p>🖼️ <strong>[Illustration suggérée]</strong> : Schéma comparatif montrant un serveur traditionnel débordé face au flux de données vs un cluster distribué Hadoop qui gère efficacement la charge.</p>
+</blockquote>
+<hr />
+<h2 id="12-definition-du-big-data">1.2 Définition du Big Data</h2>
+<p>Le Big Data désigne :
+1. L'ensemble des <strong>données massives, variées et générées à grande vitesse</strong>, dont le volume, la variété et la vélocité dépassent les capacités des systèmes informatiques traditionnels.</p>
+<ol start="2">
+<li>Un <strong>ensemble de techniques et d'outils</strong> permettant de traiter des données trop volumineuses, trop complexes ou trop rapides pour être manipulées par des logiciels classiques de gestion de bases de données.</li>
+</ol>
+<hr />
+<h2 id="13-les-5-v-du-big-data">1.3 Les 5 V du Big Data</h2>
+<p>Les 5 V constituent les caractéristiques fondamentales du Big Data et expliquent pourquoi il nécessite des technologies spécifiques.</p>
+<h3 id="schema-des-5-v">📊 Schéma des 5 V</h3>
+<pre><code>        ╔═══════════════════════════════════════════════════════╗
+        ║           LES 5 V DU BIG DATA                         ║
+        ╚═══════════════════════════════════════════════════════╝
+                              ▲
+                              │
+        ┌─────────────────────┼─────────────────────┐
+        │                     │                     │
+        ▼                     ▼                     ▼
+   ╔═════════╗          ╔═════════╗          ╔═════════╗
+   ║ VOLUME  ║          ║ VÉLOCITÉ║          ║ VARIÉTÉ ║
+   ╚═════════╝          ╚═════════╝          ╚═════════╝
+   Quantité de          Vitesse de           Diversité
+   données              traitement           des formats
+        │                     │                     │
+        └─────────────────────┼─────────────────────┘
+                              │
+        ┌─────────────────────┴─────────────────────┐
+        │                                           │
+        ▼                                           ▼
+   ╔═════════╗                                 ╔═════════╗
+   ║ VÉRACITÉ║                                 ║ VALEUR  ║
+   ╚═════════╝                                 ╚═════════╝
+   Qualité des                                 Utilité et
+   données                                     ROI
+</code></pre>
+<hr />
+<h3 id="1-volume">📊 1. Volume</h3>
+<p><strong>Définition</strong> : Quantité massive de données générées chaque seconde dans le monde.</p>
+<p><strong>Sources principales</strong> :
+- Réseaux sociaux
+- Capteurs IoT (Internet des Objets)
+- Transactions bancaires
+- Vidéos et contenus multimédias
+- Logs systèmes</p>
+<p><strong>Enjeux</strong> :
+- Stocker efficacement ces volumes gigantesques
+- Traiter et analyser sans perte de performance
+- Réduire les coûts d'infrastructure et de stockage</p>
+<blockquote>
+<p>🖼️ <strong>[Illustration suggérée]</strong> : Graphique en barres montrant l'évolution exponentielle du volume de données de 2010 à 2025.</p>
+</blockquote>
+<hr />
+<h3 id="2-velocite">⚡ 2. Vélocité</h3>
+<p><strong>Définition</strong> : Vitesse à laquelle les données sont produites, transmises et analysées.</p>
+<p>Le Big Data ne se contente plus d'enregistrer les données, il doit les <strong>traiter en temps réel ou quasi temps réel</strong>.</p>
+<p><strong>Exemples</strong> :
+- Flux de transactions bancaires (millions par seconde)
+- Données de capteurs IoT
+- Publications sur les réseaux sociaux
+- Logs de serveurs web</p>
+<p><strong>Enjeux</strong> :
+- Gestion des flux de données continus (data streams)
+- Réduction de la latence
+- Maintien des performances malgré le débit élevé</p>
+<blockquote>
+<p>🖼️ <strong>[Illustration suggérée]</strong> : Schéma de flux de données en temps réel montrant des capteurs IoT → ingestion → traitement → visualisation en quelques millisecondes.</p>
+</blockquote>
+<hr />
+<h3 id="3-variete">🎨 3. Variété</h3>
+<p><strong>Définition</strong> : Diversité des types et formats de données collectées.</p>
+<p>Les données ne sont plus uniquement <strong>structurées</strong> (comme dans les bases relationnelles), mais aussi <strong>semi-structurées</strong> et <strong>non structurées</strong>.</p>
+<p><strong>Types de données</strong> :
+- <strong>Structurées</strong> : Bases de données SQL, fichiers CSV
+- <strong>Semi-structurées</strong> : JSON, XML, logs
+- <strong>Non structurées</strong> : Textes, images, vidéos, audio, emails</p>
+<p><strong>Enjeu principal</strong> :
+- Nécessité d'outils hétérogènes capables de gérer tous ces formats</p>
+<blockquote>
+<p>🖼️ <strong>[Illustration suggérée]</strong> : Diagramme circulaire montrant la répartition des types de données (structurées 20%, semi-structurées 30%, non structurées 50%).</p>
+</blockquote>
+<hr />
+<h3 id="4-veracite">✅ 4. Véracité</h3>
+<p><strong>Définition</strong> : Qualité, fiabilité et précision des données.</p>
+<p>Toutes les données ne sont pas exactes. Certaines peuvent être :
+- Incomplètes
+- Erronées
+- Redondantes
+- Biaisées</p>
+<p><strong>Enjeux</strong> :
+- Détection et nettoyage des erreurs
+- Validation des données avant analyse
+- Fiabilisation des sources</p>
+<blockquote>
+<p>🖼️ <strong>[Illustration suggérée]</strong> : Pipeline de nettoyage de données montrant : données brutes → détection d'anomalies → nettoyage → données fiables.</p>
+</blockquote>
+<hr />
+<h3 id="5-valeur">💎 5. Valeur</h3>
+<p><strong>Définition</strong> : Capacité à transformer les données brutes en informations utiles, décisions stratégiques ou avantages concurrentiels.</p>
+<blockquote>
+<p>💡 <strong>C'est le V le plus important !</strong></p>
+</blockquote>
+<p><strong>Enjeux</strong> :
+- Transformer les données en insights actionnables
+- Assurer un retour sur investissement (ROI)
+- Créer de la valeur business</p>
+<p><strong>Exemples de création de valeur</strong> :
+- Recommandations personnalisées (Netflix, Amazon)
+- Détection de fraudes bancaires
+- Optimisation de la chaîne logistique
+- Prédictions en santé publique</p>
+<blockquote>
+<p>🖼️ <strong>[Illustration suggérée]</strong> : Pyramide inversée montrant : Volume massif de données brutes (base large) → Informations pertinentes (milieu) → Insights précieux (sommet).</p>
+</blockquote>
+<hr />
+<h2 id="14-sources-de-donnees-du-big-data">1.4 Sources de données du Big Data</h2>
+<h3 id="donnees-generees-par-les-machines">🤖 Données générées par les machines</h3>
+<p><strong>Catégorie en plus forte croissance</strong>. Données créées automatiquement par des appareils et systèmes sans intervention humaine.</p>
+<p><strong>Exemples</strong> :
+- <strong>IoT (Internet des Objets)</strong> : capteurs industriels, domotique, wearables
+- <strong>Logs système</strong> : serveurs, applications
+- <strong>Données satellites</strong>
+- <strong>Équipements médicaux connectés</strong></p>
+<blockquote>
+<p>📈 <strong>Chiffre clé</strong> : Selon les statistiques IoT, des milliards d'objets connectés génèrent des téraoctets de données chaque jour.</p>
+</blockquote>
+<hr />
+<h3 id="donnees-generees-par-les-humains">👥 Données générées par les humains</h3>
+<p>Données créées activement et passivement lors de nos interactions avec la technologie.</p>
+<p><strong>Exemples</strong> :
+- <strong>Réseaux sociaux</strong> : posts, likes, partages, commentaires
+- <strong>Emails et messages</strong>
+- <strong>Documents et fichiers</strong>
+- <strong>Photos et vidéos</strong>
+- <strong>Recherches web</strong></p>
+<blockquote>
+<p>🖼️ <strong>[Illustration suggérée]</strong> : Infographie montrant les volumes générés par seconde sur différents réseaux sociaux (X tweets/seconde, Y photos Instagram/minute, etc.).</p>
+</blockquote>
+<hr />
+<h3 id="donnees-transactionnelles-et-dentreprises">💼 Données transactionnelles et d'entreprises</h3>
+<p>Données générées lors d'opérations commerciales et organisationnelles. Plus structurées mais volumineuses.</p>
+<p><strong>Exemples</strong> :
+- <strong>Transactions e-commerce</strong>
+- <strong>Données ERP</strong> (planification des ressources)
+- <strong>CRM</strong> (gestion de la relation client)
+- <strong>Données financières et comptables</strong>
+- <strong>Historiques d'achats</strong></p>
+<hr />
+<h2 id="15-applications-du-big-data">1.5 Applications du Big Data</h2>
+<p>Les applications couvrent presque tous les domaines d'activité :</p>
+<ul>
+<li><strong>Santé</strong> : Diagnostic assisté, médecine personnalisée, épidémiologie</li>
+<li><strong>Finance</strong> : Détection de fraudes, trading algorithmique, scoring crédit</li>
+<li><strong>Marketing</strong> : Ciblage publicitaire, analyse comportementale, recommandations</li>
+<li><strong>Transport</strong> : Optimisation de trajets, véhicules autonomes, gestion du trafic</li>
+<li><strong>Énergie</strong> : Smart grids, prévision de la demande</li>
+<li><strong>Agriculture</strong> : Agriculture de précision, optimisation des rendements</li>
+<li><strong>Ville intelligente</strong> : Gestion des déchets, éclairage public, sécurité</li>
+</ul>
+<blockquote>
+<p>🖼️ <strong>[Illustration suggérée]</strong> : Carte mentale avec "Big Data" au centre et les différents domaines d'application autour avec des icônes.</p>
+</blockquote>
+<hr />
+<h2 id="16-lanalyse-du-big-data-big-data-analytics">1.6 L'analyse du Big Data (Big Data Analytics)</h2>
+<h3 id="definition">Définition</h3>
+<p>Ensemble des <strong>méthodes, outils et technologies</strong> permettant d'examiner de grands volumes de données variées, souvent en temps réel, pour découvrir :
+- Des tendances
+- Des corrélations
+- Des modèles cachés
+- Des informations utiles à la prise de décision</p>
+<h3 id="pipeline-danalyse-big-data">Pipeline d'analyse Big Data</h3>
+<pre><code>┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
+│             │    │             │    │             │    │             │    │             │
+│  COLLECTE   │───▶│  STOCKAGE   │───▶│  NETTOYAGE  │───▶│   ANALYSE   │───▶│VISUALISATION│
+│             │    │             │    │             │    │             │    │             │
+└─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘
+      │                  │                  │                  │                  │
+      ▼                  ▼                  ▼                  ▼                  ▼
+   Web APIs          Hadoop HDFS       Data Quality      Machine           Dashboards
+   Capteurs IoT      Cloud (S3)        ETL Process       Learning          Reports
+   Bases SQL         NoSQL             Validation        Statistics        Charts
+</code></pre>
+<h4 id="1-collecte">1️⃣ <strong>Collecte</strong></h4>
+<ul>
+<li>Récupération de données depuis diverses sources</li>
+<li>Web scraping, APIs, capteurs, bases transactionnelles, réseaux sociaux</li>
+</ul>
+<h4 id="2-stockage">2️⃣ <strong>Stockage</strong></h4>
+<ul>
+<li>Utilisation d'architectures distribuées</li>
+<li>Hadoop HDFS, cloud storage (S3, Azure Blob)</li>
+</ul>
+<h4 id="3-nettoyage-et-preparation">3️⃣ <strong>Nettoyage et préparation</strong></h4>
+<ul>
+<li>Suppression des doublons</li>
+<li>Gestion des données manquantes</li>
+<li>Homogénéisation des formats</li>
+<li>Normalisation</li>
+</ul>
+<h4 id="4-analyse-et-exploration">4️⃣ <strong>Analyse et exploration</strong></h4>
+<ul>
+<li>Application d'algorithmes</li>
+<li>Machine Learning (ML)</li>
+<li>Statistiques</li>
+<li>Text mining, data mining</li>
+</ul>
+<h4 id="5-visualisation-et-interpretation">5️⃣ <strong>Visualisation et interprétation</strong></h4>
+<ul>
+<li>Représentation graphique des résultats</li>
+<li>Outils : Tableau, Power BI, Python (Matplotlib, Seaborn)</li>
+<li>Dashboards interactifs</li>
+</ul>
+<blockquote>
+<p>🖼️ <strong>[Illustration suggérée]</strong> : Schéma de pipeline horizontal avec les 5 étapes représentées par des blocs reliés par des flèches.</p>
+</blockquote>
+<hr />
+<h2 id="17-technologies-du-big-data">1.7 Technologies du Big Data</h2>
+<p>Les technologies du Big Data regroupent un ensemble d'outils et de plateformes pour :
+- Collecter
+- Stocker
+- Traiter
+- Analyser
+- Visualiser</p>
+<p>Les volumes massifs de données issues de sources variées.</p>
+<p><strong>Principales catégories</strong> :
+- <strong>Stockage distribué</strong> : Hadoop HDFS, Amazon S3
+- <strong>Traitement batch</strong> : Hadoop MapReduce, Apache Spark
+- <strong>Traitement streaming</strong> : Apache Kafka, Spark Streaming, Flink
+- <strong>Bases NoSQL</strong> : MongoDB, Cassandra, HBase
+- <strong>Orchestration</strong> : Apache Oozie, Airflow
+- <strong>Requêtage</strong> : Hive, Impala, Presto
+- <strong>Machine Learning</strong> : Spark MLlib, TensorFlow, scikit-learn</p>
+<hr />
+<h1 id="partie-2-lecosysteme-hadoop-et-mapreduce">📘 Partie 2 : L'écosystème Hadoop et MapReduce</h1>
+<h2 id="21-introduction-a-hadoop">2.1 Introduction à Hadoop</h2>
+<h3 id="definition_1">Définition</h3>
+<p><strong>Hadoop</strong> est un framework <strong>open source</strong> développé par Apache, conçu pour :
+- Le <strong>stockage</strong> de très grandes quantités de données
+- Le <strong>traitement</strong> distribué sur des clusters de serveurs standards</p>
+<p><strong>Composants principaux</strong> :
+- <strong>HDFS</strong> (Hadoop Distributed File System) : stockage distribué
+- <strong>MapReduce</strong> : paradigme de traitement parallèle</p>
+<h3 id="objectifs-principaux">Objectifs principaux</h3>
+<ol>
+<li><strong>Stocker</strong> de gros volumes de données non structurées</li>
+<li><strong>Traiter</strong> ces données de manière parallèle et rapide</li>
+<li><strong>Assurer</strong> la tolérance aux pannes</li>
+</ol>
+<blockquote>
+<p>🖼️ <strong>[Illustration suggérée]</strong> : Logo d'Hadoop (éléphant jaune) avec les mots-clés : Distribué, Évolutif, Tolérant aux pannes.</p>
+</blockquote>
+<hr />
+<h2 id="22-histoire-et-origines-de-hadoop">2.2 Histoire et origines de Hadoop</h2>
+<h3 id="contexte-debut-des-annees-2000">🎯 Contexte (début des années 2000)</h3>
+<ul>
+<li>Croissance rapide du Web</li>
+<li>Explosion du volume de données (pages, clics, recherches)</li>
+<li>Besoin de systèmes capables de traiter ces volumes</li>
+</ul>
+<h3 id="technologies-cles-de-google">🔬 Technologies clés de Google</h3>
+<p><strong>2003 - Google File System (GFS)</strong>
+- Système de fichiers distribué
+- Gestion de données massives sur des milliers de serveurs</p>
+<p><strong>2004 - MapReduce</strong>
+- Modèle de programmation parallèle
+- Traitement de grandes quantités de données</p>
+<h3 id="doug-cutting-et-mike-cafarella-peres-fondateurs">👨‍💻 Doug Cutting et Mike Cafarella : Pères fondateurs</h3>
+<p><strong>Problème</strong> : Faire évoluer Nutch (moteur de recherche open source) à grande échelle.</p>
+<p><strong>Solution</strong> : Adapter les idées de Google
+- Implémentation open source de GFS → <strong>HDFS</strong>
+- Implémentation open source de MapReduce → <strong>MapReduce Hadoop</strong></p>
+<p><strong>Naissance</strong> : Projet Hadoop créé vers 2005-2006</p>
+<p><strong>Origine du nom</strong> : "Hadoop" vient du jouet en peluche (un éléphant jaune) du fils de Doug Cutting.</p>
+<blockquote>
+<p>🐘 L'éléphant est depuis devenu le symbole officiel du framework.</p>
+</blockquote>
+<hr />
+<h3 id="adoption-par-yahoo-2006-2008">📈 Adoption par Yahoo! (2006-2008)</h3>
+<p><strong>2006</strong> : Doug Cutting rejoint Yahoo!</p>
+<p><strong>Objectifs de Yahoo!</strong> :
+- Gérer des pétaoctets de données web
+- Stockage distribué
+- Calcul parallèle (analyse de logs, recherche)</p>
+<p><strong>2008</strong> : Yahoo! met en production le plus grand cluster Hadoop du monde à l'époque :
+- Plus de <strong>10 000 cœurs de calcul</strong>
+- Traitement de <strong>téraoctets de données par jour</strong></p>
+<hr />
+<h3 id="integration-dans-la-fondation-apache-2008">🏛️ Intégration dans la fondation Apache (2008)</h3>
+<p>Hadoop devient un <strong>projet de haut niveau</strong> (Top-Level Project) de la Fondation Apache.</p>
+<p><strong>Avantages</strong> :
+- Gouvernance communautaire
+- Évolution open source
+- Création d'un écosystème de projets associés</p>
+<hr />
+<h3 id="expansion-de-lecosysteme-2009-2013">🚀 Expansion de l'écosystème (2009-2013)</h3>
+<p>Hadoop devient la <strong>colonne vertébrale du Big Data</strong>.</p>
+<p><strong>Distributions commerciales</strong> :
+- <strong>Cloudera</strong> (2009)
+- <strong>Hortonworks</strong> (2011)
+- <strong>MapR</strong> (2011)
+- <strong>IBM BigInsights</strong> (2011)</p>
+<p><strong>Composants majeurs créés</strong> :</p>
+<table>
+<thead>
+<tr>
+<th>Année</th>
+<th>Composant</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2009</td>
+<td><strong>Hive</strong></td>
+<td>Requêtes SQL sur Hadoop</td>
+</tr>
+<tr>
+<td>2009</td>
+<td><strong>Pig</strong></td>
+<td>Langage de scripts pour traitement de données</td>
+</tr>
+<tr>
+<td>2010</td>
+<td><strong>HBase</strong></td>
+<td>Base NoSQL distribuée</td>
+</tr>
+<tr>
+<td>2011</td>
+<td><strong>Zookeeper, Oozie</strong></td>
+<td>Coordination et orchestration</td>
+</tr>
+<tr>
+<td>2012</td>
+<td><strong>YARN</strong></td>
+<td>Nouvelle architecture pour gestion des ressources</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="evolutions-majeures-hadoop-2x-et-3x">📊 Évolutions majeures : Hadoop 2.x et 3.x</h3>
+<h4 id="hadoop-2x-2013-2017"><strong>Hadoop 2.x (2013-2017)</strong></h4>
+<p>✅ <strong>Introduction de YARN</strong>
+- Remplace JobTracker/TaskTracker
+- Permet d'exécuter plusieurs types d'applications (pas seulement MapReduce)
+- Meilleure gestion des ressources et scalabilité</p>
+<h4 id="hadoop-3x-2018-aujourdhui"><strong>Hadoop 3.x (2018-aujourd'hui)</strong></h4>
+<p>✅ <strong>Optimisations majeures</strong> :
+- <strong>Erasure Coding</strong> : économie d'espace disque
+- <strong>Support GPU et containers</strong> (Docker, Kubernetes)
+- <strong>Performances accrues</strong>
+- <strong>Compatibilité cloud</strong></p>
+<hr />
+<h2 id="23-composants-principaux-de-lecosysteme-hadoop">2.3 Composants principaux de l'écosystème Hadoop</h2>
+<h3 id="hdfs-hadoop-distributed-file-system">🗄️ HDFS (Hadoop Distributed File System)</h3>
+<p><strong>Définition</strong> : Système de fichiers distribué offrant un accès haut débit aux données.</p>
+<p><strong>Caractéristiques</strong> :
+- S'étend sur tous les nœuds d'un cluster
+- Relie les systèmes de fichiers locaux de plusieurs nœuds
+- Transforme ces systèmes en un seul grand système de fichiers distribué</p>
+<blockquote>
+<p>🖼️ <strong>[Illustration suggérée]</strong> : Schéma montrant plusieurs serveurs physiques reliés formant un système de fichiers unique logique HDFS.</p>
+</blockquote>
+<hr />
+<h3 id="mapreduce">⚙️ MapReduce</h3>
+<p><strong>Définition</strong> : Framework de traitement distribué des données à grande échelle.</p>
+<p><strong>Principe</strong> : Diviser les tâches en deux étapes principales :</p>
+<ol>
+<li><strong>Map</strong> : Traitement parallèle et transformation des données en paires (clé, valeur)</li>
+<li><strong>Reduce</strong> : Agrégation et synthèse des résultats produits par la phase Map</li>
+</ol>
+<hr />
+<h3 id="yarn-yet-another-resource-negotiator">🔧 YARN (Yet Another Resource Negotiator)</h3>
+<p><strong>Rôle</strong> : Gestionnaire de ressources et planificateur de tâches du cluster.</p>
+<p><strong>Avantages</strong> :
+- Séparation de la gestion des ressources de la logique applicative
+- Support de multiples moteurs d'exécution (MapReduce, Spark, Tez, etc.)</p>
+<hr />
+<h3 id="autres-composants-de-lecosysteme">🛠️ Autres composants de l'écosystème</h3>
+<table>
+<thead>
+<tr>
+<th>Composant</th>
+<th>Fonction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Ambari</strong></td>
+<td>Interface web pour déploiement, gestion et surveillance des clusters</td>
+</tr>
+<tr>
+<td><strong>Avro</strong></td>
+<td>Système de sérialisation de données</td>
+</tr>
+<tr>
+<td><strong>Cassandra</strong></td>
+<td>Base de données NoSQL multi-maître évolutive</td>
+</tr>
+<tr>
+<td><strong>HBase</strong></td>
+<td>Base de données NoSQL distribuée pour grandes tables</td>
+</tr>
+<tr>
+<td><strong>Hive</strong></td>
+<td>Infrastructure d'entrepôt de données, requêtes SQL-like</td>
+</tr>
+<tr>
+<td><strong>Mahout</strong></td>
+<td>Bibliothèque de machine learning</td>
+</tr>
+<tr>
+<td><strong>Pig</strong></td>
+<td>Langage de flux de données de haut niveau</td>
+</tr>
+<tr>
+<td><strong>Spark</strong></td>
+<td>Moteur de calcul rapide et général</td>
+</tr>
+<tr>
+<td><strong>Tez</strong></td>
+<td>Framework de programmation de flux de données</td>
+</tr>
+<tr>
+<td><strong>ZooKeeper</strong></td>
+<td>Service de coordination pour applications distribuées</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="24-hdfs-hadoop-distributed-file-system">2.4 HDFS (Hadoop Distributed File System)</h2>
+<h3 id="objectif">🎯 Objectif</h3>
+<p>HDFS est conçu pour stocker de <strong>très grandes quantités de données</strong> de manière :
+- <strong>Distribuée</strong> : répartie sur plusieurs machines
+- <strong>Fiable</strong> : tolérante aux pannes
+- <strong>Évolutive</strong> : peut croître en ajoutant des nœuds</p>
+<hr />
+<h3 id="caracteristiques-principales">📋 Caractéristiques principales</h3>
+<p>✅ <strong>Système distribué, évolutif, tolérant aux pannes et à haut débit</strong></p>
+<p>✅ <strong>Accès aux données via MapReduce</strong></p>
+<p>✅ <strong>Découpage en blocs (splits)</strong>
+- Fichiers découpés en blocs de 128 Mo (par défaut)
+- Chaque bloc est répliqué (3 répliques par défaut)</p>
+<p>✅ <strong>Opérations limitées</strong> :
+- Création, suppression, copie : ✅
+- Modification : ❌ (Write Once, Read Many - WORM)</p>
+<p>✅ <strong>Lecture en flux continu (streaming reads)</strong>
+- Optimisé pour lectures séquentielles, pas pour accès aléatoires</p>
+<p>✅ <strong>Principe de localité des données</strong>
+- Traiter les données là où elles sont stockées
+- Réduit le transfert de données sur le réseau</p>
+<blockquote>
+<p>🖼️ <strong>[Illustration suggérée]</strong> : Schéma montrant un gros fichier découpé en blocs de 128 Mo distribués sur différents serveurs avec leurs répliques.</p>
+</blockquote>
+<hr />
+<h3 id="architecture-hdfs-masterslave">🏛️ Architecture HDFS (Master/Slave)</h3>
+<pre><code>                        ╔════════════════════════════════╗
+                        ║       NAMENODE (Master)        ║
+                        ║  - Gestion métadonnées         ║
+                        ║  - FsImage + EditLog           ║
+                        ║  - Coordination DataNodes      ║
+                        ╚════════════════════════════════╝
+                                      │
+                    ┌─────────────────┼─────────────────┐
+                    │                 │                 │
+                    ▼                 ▼                 ▼
+          ┌──────────────┐  ┌──────────────┐  ┌──────────────┐
+          │ DATANODE 1   │  │ DATANODE 2   │  │ DATANODE 3   │
+          │              │  │              │  │              │
+          │ [Bloc A.1]   │  │ [Bloc A.2]   │  │ [Bloc A.3]   │
+          │ [Bloc B.1]   │  │ [Bloc B.3]   │  │ [Bloc B.2]   │
+          │ [Bloc C.2]   │  │ [Bloc C.1]   │  │ [Bloc C.3]   │
+          └──────────────┘  └──────────────┘  └──────────────┘
+               Rack 1            Rack 1            Rack 2
+
+Légende :
+- Fichier A divisé en 3 blocs : A.1, A.2, A.3 (chacun répliqué 3 fois)
+- Bloc A.1 existe sur DataNode 1, 2, et 3 (tolérance aux pannes)
+</code></pre>
+<h4 id="master-namenode">🎓 <strong>Master : NameNode</strong></h4>
+<p><strong>Rôle</strong> : Cerveau du système de fichiers HDFS</p>
+<p><strong>Responsabilités</strong> :
+- Gère l'<strong>espace de noms</strong> du système de fichiers
+- Stocke les <strong>métadonnées</strong> :
+  - <strong>FsImage</strong> : Image du système de fichiers (structure)
+  - <strong>EditLog</strong> : Journal des modifications
+- Régule l'<strong>accès des clients</strong> aux fichiers
+- <strong>Ne stocke PAS les données elles-mêmes</strong>, seulement les métadonnées</p>
+<blockquote>
+<p>⚠️ <strong>Point critique</strong> : Le NameNode est un point unique de défaillance (SPOF) dans Hadoop 1.x</p>
+</blockquote>
+<hr />
+<h4 id="slave-datanode">👷 <strong>Slave : DataNode</strong></h4>
+<p><strong>Rôle</strong> : Stocke réellement les blocs de données</p>
+<p><strong>Caractéristiques</strong> :
+- <strong>Plusieurs DataNodes</strong> par cluster
+- Gère le <strong>stockage physique</strong> attaché aux nœuds
+- Envoie périodiquement un <strong>rapport d'état (heartbeat)</strong> au NameNode
+- Exécute les opérations de lecture/écriture demandées par les clients</p>
+<blockquote>
+<p>🖼️ <strong>[Illustration suggérée]</strong> : Architecture avec 1 NameNode au sommet (maître) et plusieurs DataNodes en dessous (esclaves) reliés par des flèches de communication.</p>
+</blockquote>
+<hr />
+<h3 id="replication-des-blocs">🔄 Réplication des blocs</h3>
+<p><strong>Objectif</strong> : Garantir la <strong>tolérance aux pannes</strong> et la <strong>disponibilité des données</strong></p>
+<p><strong>Facteur de réplication</strong> : 3 (par défaut, configurable par fichier)</p>
+<pre><code>                    FICHIER ORIGINAL (384 Mo)
+                              │
+                              ▼
+        ┌─────────────────────┴─────────────────────┐
+        │    Découpage en blocs de 128 Mo          │
+        └─────────────────────┬─────────────────────┘
+                              │
+        ┌─────────────────────┼─────────────────────┐
+        ▼                     ▼                     ▼
+   ╔═══════╗             ╔═══════╗             ╔═══════╗
+   ║BLOC 1 ║             ║BLOC 2 ║             ║BLOC 3 ║
+   ║128 Mo ║             ║128 Mo ║             ║128 Mo ║
+   ╚═══════╝             ╚═══════╝             ╚═══════╝
+        │                     │                     │
+        │  Facteur de         │                     │
+        │  réplication = 3    │                     │
+        │                     │                     │
+        ▼                     ▼                     ▼
+┌───────────────┐     ┌───────────────┐     ┌───────────────┐
+│ Réplique 1.1  │     │ Réplique 2.1  │     │ Réplique 3.1  │
+│ (Rack A)      │     │ (Rack A)      │     │ (Rack A)      │
+├───────────────┤     ├───────────────┤     ├───────────────┤
+│ Réplique 1.2  │     │ Réplique 2.2  │     │ Réplique 3.2  │
+│ (Rack B)      │     │ (Rack B)      │     │ (Rack B)      │
+├───────────────┤     ├───────────────┤     ├───────────────┤
+│ Réplique 1.3  │     │ Réplique 2.3  │     │ Réplique 3.3  │
+│ (Rack B)      │     │ (Rack B)      │     │ (Rack B)      │
+└───────────────┘     └───────────────┘     └───────────────┘
+</code></pre>
+<p><strong>Stratégie de placement</strong> :
+1. <strong>1ère réplique</strong> : Placée sur n'importe quel nœud du cluster
+2. <strong>2ème réplique</strong> : Stockée sur un nœud d'un <strong>autre rack</strong>
+3. <strong>3ème réplique</strong> : Enregistrée sur un nœud <strong>différent du second rack</strong></p>
+<p><strong>Avantages</strong> :
+- ✅ Tolérance à la panne d'un nœud
+- ✅ Tolérance à la panne d'un rack entier
+- ✅ Haute disponibilité</p>
+<blockquote>
+<p>🖼️ <strong>[Illustration suggérée]</strong> : Schéma montrant 2 racks avec plusieurs serveurs, et les 3 répliques d'un même bloc positionnées selon la stratégie décrite.</p>
+</blockquote>
+<hr />
+<h3 id="demarrage-du-namenode">🚀 Démarrage du NameNode</h3>
+<p><strong>Séquence au démarrage</strong> :</p>
+<ol>
+<li>Le NameNode lit le <strong>fsimage</strong> en mémoire</li>
+<li>Le NameNode applique les modifications du <strong>editlog</strong></li>
+<li>Le NameNode attend les <strong>rapports de blocs</strong> des DataNodes
+   - Note : Le NameNode ne stocke PAS les localisations physiques des blocs
+   - Ces informations sont reçues des DataNodes au démarrage</li>
+<li>Le NameNode quitte le <strong>mode sans échec (SafeMode)</strong> lorsque <strong>99,9% des blocs</strong> disposent d'au moins une copie reconnue</li>
+</ol>
+<blockquote>
+<p>⏱️ <strong>SafeMode</strong> : Mode de protection pendant lequel HDFS est en lecture seule.</p>
+</blockquote>
+<hr />
+<h3 id="ajout-dun-fichier-a-hdfs">📝 Ajout d'un fichier à HDFS</h3>
+<p><strong>Processus</strong> :</p>
+<ol>
+<li>
+<p>Le fichier est ajouté à la <strong>mémoire du NameNode</strong> en enregistrant les informations dans le fichier <strong>editlog</strong></p>
+</li>
+<li>
+<p>Les <strong>données sont écrites en blocs</strong> sur les DataNodes
+   - Le premier DataNode commence une <strong>copie en chaîne</strong> vers deux autres DataNodes
+   - Pipeline : Client → DataNode1 → DataNode2 → DataNode3</p>
+</li>
+<li>
+<p><strong>Condition de succès</strong> :
+   - Si <strong>au moins une écriture réussit</strong> pour chaque bloc, l'opération d'écriture est considérée comme réussie
+   - Les réplications manquantes seront complétées par le NameNode ultérieurement</p>
+</li>
+</ol>
+<blockquote>
+<p>🖼️ <strong>[Illustration suggérée]</strong> : Diagramme de séquence montrant le flux : Client → NameNode (métadonnées) → DataNode1 → DataNode2 → DataNode3 (pipeline de réplication).</p>
+</blockquote>
+<hr />
+<h3 id="secondary-namenode">🔧 Secondary NameNode</h3>
+<p><strong>⚠️ Attention</strong> : Malgré son nom, ce n'est <strong>PAS</strong> une solution de haute disponibilité !</p>
+<p><strong>Rôle</strong> : Assistant du NameNode principal</p>
+<p><strong>Fonction</strong> :
+- Pendant le fonctionnement, le NameNode principal ne peut <strong>pas fusionner</strong> les fichiers <strong>fsImage</strong> et <strong>editlog</strong>
+- Cette tâche est effectuée par le <strong>Secondary NameNode</strong> périodiquement</p>
+<p><strong>Processus</strong> :
+1. Le Secondary NameNode copie le nouveau <strong>edit log</strong> depuis le NameNode principal
+2. Il fusionne ce journal avec le fichier <strong>fsImage</strong>
+3. Il renvoie le nouveau fsImage au NameNode principal</p>
+<p><strong>Avantage</strong> :
+- Permet un <strong>démarrage plus rapide</strong> du NameNode
+- Réduit la taille de l'editlog</p>
+<blockquote>
+<p>🖼️ <strong>[Illustration suggérée]</strong> : Schéma montrant NameNode et Secondary NameNode avec les échanges de fsImage et editlog entre eux.</p>
+</blockquote>
+<hr />
+<h3 id="hdfs-2-haute-disponibilite-high-availability">🏥 HDFS-2 : Haute disponibilité (High Availability)</h3>
+<p><strong>Problème de Hadoop 1.x</strong> : Le NameNode était un point unique de défaillance (SPOF)</p>
+<p><strong>Solution HDFS-2</strong> : Introduction de la <strong>Haute Disponibilité (HA)</strong></p>
+<p><strong>Architecture HA</strong> :</p>
+<ol>
+<li>
+<p><strong>NameNode Actif (Active NameNode)</strong>
+   - Gère les opérations du système de fichiers
+   - Enregistre les modifications sur les <strong>JournalNodes</strong></p>
+</li>
+<li>
+<p><strong>NameNode en veille (Standby NameNode)</strong>
+   - Maintient une copie synchronisée de l'état du NameNode actif
+   - Prêt à prendre le relais instantanément en cas de panne</p>
+</li>
+<li>
+<p><strong>JournalNodes (au moins 3)</strong>
+   - Stockent les transactions du système de fichiers
+   - Le NameNode actif écrit sur au moins <strong>3 JournalNodes</strong>
+   - Le Standby NameNode lit ces transactions pour rester à jour</p>
+</li>
+<li>
+<p><strong>DataNodes</strong>
+   - Envoient les <strong>localisations des blocs</strong> et <strong>heartbeats</strong> aux <strong>deux NameNodes</strong></p>
+</li>
+</ol>
+<p><strong>Avantage</strong> :
+- ✅ Basculement rapide en cas de panne
+- ✅ Pas de perte de données
+- ✅ Disponibilité quasi continue</p>
+<blockquote>
+<p>🖼️ <strong>[Illustration suggérée]</strong> : Architecture HA avec Active NameNode, Standby NameNode, 3 JournalNodes au milieu, et DataNodes communiquant avec les deux NameNodes.</p>
+</blockquote>
+<hr />
+<h3 id="hdfs-federe-federated-hdfs">🗂️ HDFS fédéré (Federated HDFS)</h3>
+<p><strong>Problème</strong> : Dans un cluster traditionnel, un seul NameNode gère toutes les métadonnées, ce qui limite la scalabilité.</p>
+<p><strong>Solution</strong> : HDFS fédéré (introduit dans Hadoop 2.x)</p>
+<p><strong>Principe</strong> :
+- <strong>Plusieurs NameNodes indépendants</strong> dans un même cluster
+- Chaque NameNode gère un <strong>espace de noms (namespace) indépendant</strong>
+- <strong>DataNodes partagés</strong> entre tous les NameNodes</p>
+<p><strong>Structure</strong> :
+- <strong>Namespace 1</strong> → NameNode1 → Métadonnées NS1
+- <strong>Namespace 2</strong> → NameNode2 → Métadonnées NS2
+- <strong>Namespace 3</strong> → NameNode3 → Métadonnées NS3
+- Tous utilisent le <strong>même pool de DataNodes</strong></p>
+<p><strong>Avantages</strong> :
+- ✅ Meilleure <strong>scalabilité</strong> (répartition de la charge des métadonnées)
+- ✅ <strong>Isolation</strong> des namespaces (une panne n'affecte qu'un namespace)
+- ✅ Gestion de <strong>très gros clusters</strong></p>
+<blockquote>
+<p>🖼️ <strong>[Illustration suggérée]</strong> : Schéma montrant 3 NameNodes au sommet, chacun gérant son namespace, et en dessous un pool commun de DataNodes.</p>
+</blockquote>
+<hr />
+<h3 id="commandes-hdfs-essentielles">💻 Commandes HDFS essentielles</h3>
+<h4 id="commandes-de-consultation">📂 Commandes de consultation</h4>
+<table>
+<thead>
+<tr>
+<th>Commande</th>
+<th>Description</th>
+<th>Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>hdfs dfs -ls /</code></td>
+<td>Liste le contenu d'un répertoire</td>
+<td><code>hdfs dfs -ls /user/cloudera</code></td>
+</tr>
+<tr>
+<td><code>hdfs dfs -ls -R /</code></td>
+<td>Liste récursivement tous les fichiers</td>
+<td><code>hdfs dfs -ls -R /</code></td>
+</tr>
+<tr>
+<td><code>hdfs dfs -du /path</code></td>
+<td>Affiche la taille de chaque fichier</td>
+<td><code>hdfs dfs -du /data</code></td>
+</tr>
+<tr>
+<td><code>hdfs dfs -count /path</code></td>
+<td>Compte fichiers, répertoires, octets</td>
+<td><code>hdfs dfs -count /data</code></td>
+</tr>
+<tr>
+<td><code>hdfs dfs -stat /file</code></td>
+<td>Affiche les métadonnées d'un fichier</td>
+<td><code>hdfs dfs -stat /data/file.csv</code></td>
+</tr>
+<tr>
+<td><code>hdfs dfs -cat /file</code></td>
+<td>Affiche le contenu d'un fichier texte</td>
+<td><code>hdfs dfs -cat /input/test.txt</code></td>
+</tr>
+<tr>
+<td><code>hdfs dfs -tail /file</code></td>
+<td>Affiche les dernières lignes</td>
+<td><code>hdfs dfs -tail /logs/app.log</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h4 id="commandes-de-gestion-des-repertoires">📁 Commandes de gestion des répertoires</h4>
+<table>
+<thead>
+<tr>
+<th>Commande</th>
+<th>Description</th>
+<th>Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>hdfs dfs -mkdir /chemin</code></td>
+<td>Crée un répertoire</td>
+<td><code>hdfs dfs -mkdir /data/input</code></td>
+</tr>
+<tr>
+<td><code>hdfs dfs -mkdir -p /chemin/sous/rep</code></td>
+<td>Crée toute l'arborescence</td>
+<td><code>hdfs dfs -mkdir -p /data/2025/janvier</code></td>
+</tr>
+<tr>
+<td><code>hdfs dfs -rmdir /chemin</code></td>
+<td>Supprime un dossier vide</td>
+<td><code>hdfs dfs -rmdir /tmp/test</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h4 id="commandes-de-transfert-de-fichiers">📤 Commandes de transfert de fichiers</h4>
+<table>
+<thead>
+<tr>
+<th>Commande</th>
+<th>Description</th>
+<th>Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>hdfs dfs -put localfile hdfs_path</code></td>
+<td>Copie local → HDFS</td>
+<td><code>hdfs dfs -put test.csv /data/</code></td>
+</tr>
+<tr>
+<td><code>hdfs dfs -moveFromLocal localfile hdfs_path</code></td>
+<td>Déplace local → HDFS</td>
+<td><code>hdfs dfs -moveFromLocal data.csv /data/</code></td>
+</tr>
+<tr>
+<td><code>hdfs dfs -get hdfsfile localdir</code></td>
+<td>Copie HDFS → local</td>
+<td><code>hdfs dfs -get /data/result.txt</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h4 id="commandes-de-suppression-et-manipulation">🗑️ Commandes de suppression et manipulation</h4>
+<table>
+<thead>
+<tr>
+<th>Commande</th>
+<th>Description</th>
+<th>Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>hdfs dfs -rm /file</code></td>
+<td>Supprime un fichier</td>
+<td><code>hdfs dfs -rm /data/old.csv</code></td>
+</tr>
+<tr>
+<td><code>hdfs dfs -rm -r /dossier</code></td>
+<td>Supprime récursivement</td>
+<td><code>hdfs dfs -rm -r /data/temp</code></td>
+</tr>
+<tr>
+<td><code>hdfs dfs -cp source dest</code></td>
+<td>Copie un fichier dans HDFS</td>
+<td><code>hdfs dfs -cp /data/a.csv /backup/a.csv</code></td>
+</tr>
+<tr>
+<td><code>hdfs dfs -mv source dest</code></td>
+<td>Déplace/renomme</td>
+<td><code>hdfs dfs -mv /data/test.csv /archive/test.csv</code></td>
+</tr>
+<tr>
+<td><code>hdfs dfs -touchz /file</code></td>
+<td>Crée un fichier vide</td>
+<td><code>hdfs dfs -touchz /data/empty.txt</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h4 id="commandes-de-permissions">🔐 Commandes de permissions</h4>
+<table>
+<thead>
+<tr>
+<th>Commande</th>
+<th>Description</th>
+<th>Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>hdfs dfs -chmod 755 /path</code></td>
+<td>Modifie les permissions</td>
+<td><code>hdfs dfs -chmod 755 /data/file.txt</code></td>
+</tr>
+<tr>
+<td><code>hdfs dfs -chown user:group /path</code></td>
+<td>Change le propriétaire</td>
+<td><code>hdfs dfs -chown hadoop:hdfs /data/</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h4 id="commandes-dadministration">🛠️ Commandes d'administration</h4>
+<table>
+<thead>
+<tr>
+<th>Commande</th>
+<th>Description</th>
+<th>Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>hdfs dfsadmin -report</code></td>
+<td>Affiche l'état du cluster</td>
+<td><code>hdfs dfsadmin -report</code></td>
+</tr>
+<tr>
+<td><code>hdfs dfsadmin -safemode get</code></td>
+<td>Vérifie le mode sans échec</td>
+<td><code>hdfs dfsadmin -safemode get</code></td>
+</tr>
+<tr>
+<td><code>hdfs dfsadmin -safemode enter</code></td>
+<td>Active le SafeMode</td>
+<td><code>hdfs dfsadmin -safemode enter</code></td>
+</tr>
+<tr>
+<td><code>hdfs dfsadmin -safemode leave</code></td>
+<td>Désactive le SafeMode</td>
+<td><code>hdfs dfsadmin -safemode leave</code></td>
+</tr>
+<tr>
+<td><code>hdfs fsck /</code></td>
+<td>Vérifie l'intégrité du système</td>
+<td><code>hdfs fsck /</code></td>
+</tr>
+<tr>
+<td><code>hdfs version</code></td>
+<td>Affiche la version d'Hadoop</td>
+<td><code>hdfs version</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="25-mapreduce">2.5 MapReduce</h2>
+<h3 id="definition_2">🎯 Définition</h3>
+<p><strong>MapReduce</strong> est un :
+- <strong>Modèle de programmation</strong> développé par Google
+- <strong>Mécanisme de traitement distribué</strong> implémenté dans Hadoop
+- Permet de traiter <strong>efficacement de grandes quantités de données</strong> sur un cluster</p>
+<h3 id="principes-fondamentaux">💡 Principes fondamentaux</h3>
+<ol>
+<li><strong>Gestion des ressources et planification des tâches</strong></li>
+<li><strong>Amener la fonction vers les données</strong> (et non l'inverse)
+   - Évite de déplacer des téraoctets de données sur le réseau
+   - L'application est distribuée vers les ressources de calcul où les données sont stockées</li>
+</ol>
+<blockquote>
+<p>🖼️ <strong>[Illustration suggérée]</strong> : Schéma comparatif montrant l'ancien modèle (déplacement des données vers le programme) vs MapReduce (déplacement du programme vers les données).</p>
+</blockquote>
+<hr />
+<h3 id="les-trois-phases-de-mapreduce">🔄 Les trois phases de MapReduce</h3>
+<h4 id="1-phase-map-mappers">1️⃣ <strong>Phase Map (Mappers)</strong></h4>
+<p><strong>Rôle</strong> : Traitement initial et transformation</p>
+<p><strong>Fonctionnement</strong> :
+- Chaque nœud du cluster lit une <strong>portion des données d'entrée</strong>
+- Applique une <strong>fonction Map</strong> à chaque élément
+- Produit des <strong>paires clé/valeur</strong> <code>&lt;clé, valeur&gt;</code>
+- Un mapper est généralement un programme relativement <strong>petit</strong> avec une tâche <strong>simple</strong></p>
+<p><strong>Exemple</strong> : Pour compter des mots</p>
+<pre><code>Input : &quot;Tigre Singe Tigre&quot;
+Output Map : (Tigre, 1), (Singe, 1), (Tigre, 1)
+</code></pre>
+<hr />
+<h4 id="2-phase-shuffle-melange-et-tri">2️⃣ <strong>Phase Shuffle (Mélange et tri)</strong></h4>
+<p><strong>Rôle</strong> : Intermédiaire entre Map et Reduce</p>
+<p><strong>Fonctionnement</strong> :
+- <strong>Transfère</strong> les paires intermédiaires depuis les nœuds Map vers les nœuds Reduce
+- <strong>Regroupe</strong> toutes les valeurs associées à une même clé
+- <strong>Trie</strong> les données par clé</p>
+<p><strong>Exemple</strong> :</p>
+<pre><code>Avant Shuffle : (Tigre, 1), (Chat, 1), (Tigre, 1), (Chat, 1), (Tigre, 1)
+Après Shuffle : (Chat, [1, 1]), (Tigre, [1, 1, 1])
+</code></pre>
+<blockquote>
+<p>🔧 Cette phase est <strong>automatique</strong> et gérée par le framework MapReduce</p>
+</blockquote>
+<hr />
+<h4 id="3-phase-reduce-reducers">3️⃣ <strong>Phase Reduce (Reducers)</strong></h4>
+<p><strong>Rôle</strong> : Agrégation et production du résultat final</p>
+<p><strong>Fonctionnement</strong> :
+- De petits programmes qui <strong>agrègent</strong> toutes les valeurs associées à une clé
+- Les paires ayant la <strong>même clé</strong> sont envoyées au <strong>même Reducer</strong>
+- La fonction Reduce <strong>combine ou agrège</strong> les valeurs pour produire le <strong>résultat final</strong></p>
+<p><strong>Exemple</strong> :</p>
+<pre><code>Input Reduce : (Chat, [1, 1]), (Tigre, [1, 1, 1])
+Output Reduce : (Chat, 2), (Tigre, 3)
+</code></pre>
+<hr />
+<h3 id="exemple-complet-wordcount-comptage-de-mots">📊 Exemple complet : WordCount (Comptage de mots)</h3>
+<p><strong>Objectif</strong> : Compter le nombre d'occurrences de chaque mot dans un fichier texte.</p>
+<pre><code>┌──────────────────────────────────────────────────────────────┐
+│  FICHIER INPUT                                               │
+│                                                              │
+│  Ligne 1: &quot;Tigre Singe Tigre&quot;                              │
+│  Ligne 2: &quot;Chat Chien Chat&quot;                                │
+│  Ligne 3: &quot;Tigre Singe Chien&quot;                              │
+└──────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+        ┌─────────────────────────────────────────┐
+        │        PHASE MAP (Mappers)              │
+        └─────────────────────────────────────────┘
+                              │
+        ┌─────────────────────┼─────────────────────┐
+        ▼                     ▼                     ▼
+   Mapper 1              Mapper 2              Mapper 3
+   ─────────             ─────────             ─────────
+   (Tigre, 1)           (Chat, 1)             (Tigre, 1)
+   (Singe, 1)           (Chien, 1)            (Singe, 1)
+   (Tigre, 1)           (Chat, 1)             (Chien, 1)
+        │                     │                     │
+        └─────────────────────┼─────────────────────┘
+                              ▼
+        ┌─────────────────────────────────────────┐
+        │   PHASE SHUFFLE (Tri et Regroupement)   │
+        └─────────────────────────────────────────┘
+                              │
+        ┌─────────────────────┼─────────────────────┐
+        ▼                     ▼                     ▼
+   Chat: [1,1]          Chien: [1,1]         Singe: [1,1]
+   Tigre: [1,1,1]
+        │                     │                     │
+        └─────────────────────┼─────────────────────┘
+                              ▼
+        ┌─────────────────────────────────────────┐
+        │      PHASE REDUCE (Reducers)            │
+        └─────────────────────────────────────────┘
+                              │
+                              ▼
+        ┌─────────────────────────────────────────┐
+        │         RÉSULTAT FINAL                  │
+        │                                         │
+        │  Chat: 2                                │
+        │  Chien: 2                               │
+        │  Singe: 2                               │
+        │  Tigre: 3                               │
+        └─────────────────────────────────────────┘
+</code></pre>
+<p><strong>Explication détaillée</strong> :</p>
+<pre><code>📄 Fichier d'entrée :
+Tigre Singe Tigre
+Chat Chien Chat
+Tigre Singe Chien
+</code></pre>
+<p><strong>Étape 1 : MAP</strong></p>
+<pre><code>Bloc 1 : Tigre Singe Tigre → (Tigre, 1), (Singe, 1), (Tigre, 1)
+Bloc 2 : Chat Chien Chat   → (Chat, 1), (Chien, 1), (Chat, 1)
+Bloc 3 : Tigre Singe Chien → (Tigre, 1), (Singe, 1), (Chien, 1)
+</code></pre>
+<p><strong>Étape 2 : SHUFFLE</strong></p>
+<pre><code>Regroupement par clé :
+Chat  → [1, 1]
+Chien → [1, 1]
+Singe → [1, 1]
+Tigre → [1, 1, 1]
+</code></pre>
+<p><strong>Étape 3 : REDUCE</strong></p>
+<pre><code>Somme des valeurs :
+Chat  → 2
+Chien → 2
+Singe → 2
+Tigre → 3
+</code></pre>
+<p><strong>📤 Résultat final :</strong></p>
+<pre><code>Chat, 2
+Chien, 2
+Singe, 2
+Tigre, 3
+</code></pre>
+<blockquote>
+<p>🖼️ <strong>[Illustration suggérée]</strong> : Diagramme de flux complet montrant les 3 blocs de texte → phase Map (3 mappers) → phase Shuffle (regroupement) → phase Reduce (agrégation) → résultat final.</p>
+</blockquote>
+<hr />
+<h3 id="architecture-mapreduce-v1">🏗️ Architecture MapReduce v1</h3>
+<h4 id="jobtracker-maitre">🎓 <strong>JobTracker (Maître)</strong></h4>
+<p><strong>Caractéristiques</strong> :
+- <strong>Unique</strong> dans le cluster
+- Situé généralement sur le NameNode (ou serveur séparé)</p>
+<p><strong>Rôles principaux</strong> :
+1. <strong>Planifie</strong> les tâches Map et Reduce sur les nœuds disponibles
+2. <strong>Surveille</strong> leur exécution
+3. <strong>Gère les échecs</strong> et relance les tâches en cas de panne
+4. <strong>Gère l'allocation des ressources</strong> (CPU, mémoire)</p>
+<blockquote>
+<p>⚠️ <strong>Point critique</strong> : Si le JobTracker tombe en panne, <strong>tout le job échoue</strong> (SPOF - Single Point Of Failure)</p>
+</blockquote>
+<hr />
+<h4 id="tasktracker-esclaves">👷 <strong>TaskTracker (Esclaves)</strong></h4>
+<p><strong>Caractéristiques</strong> :
+- Un processus <strong>TaskTracker</strong> s'exécute sur <strong>chaque nœud</strong> du cluster</p>
+<p><strong>Rôles</strong> :
+1. <strong>Exécute</strong> les tâches Map et Reduce envoyées par le JobTracker
+2. <strong>Signale</strong> périodiquement son état au JobTracker via des <strong>heartbeats</strong></p>
+<p><strong>Gestion des ressources</strong> :
+- Chaque TaskTracker a un nombre <strong>fixe de slots</strong> :
+  - <strong>Map slots</strong>
+  - <strong>Reduce slots</strong>
+- Une fois les slots occupés, le nœud ne peut plus accepter de nouvelles tâches</p>
+<p><strong>Tolérance aux pannes</strong> :
+- Si un TaskTracker échoue, le JobTracker <strong>redistribue</strong> ses tâches à un autre nœud</p>
+<blockquote>
+<p>🖼️ <strong>[Illustration suggérée]</strong> : Architecture avec 1 JobTracker central (maître) et plusieurs TaskTrackers (esclaves) sur différents nœuds.</p>
+</blockquote>
+<hr />
+<h3 id="processus-dexecution-dun-job-mapreduce">🔄 Processus d'exécution d'un job MapReduce</h3>
+<p><strong>Acteurs</strong> :</p>
+<ol>
+<li>
+<p><strong>Client</strong> : Soumet les jobs MapReduce</p>
+</li>
+<li>
+<p><strong>JobTracker</strong> : Coordonne l'exécution
+   - Découpe le job en tâches Map et Reduce
+   - Attribue ces tâches aux différents nœuds</p>
+</li>
+<li>
+<p><strong>TaskTracker</strong> : Exécute les tâches
+   - Fonctions Map sur les données locales
+   - Fonctions Reduce sur les résultats intermédiaires</p>
+</li>
+</ol>
+<p><strong>Flux d'exécution</strong> :</p>
+<pre><code>Client → JobTracker → TaskTrackers (Map) → Shuffle → TaskTrackers (Reduce) → Résultat
+</code></pre>
+<blockquote>
+<p>🖼️ <strong>[Illustration suggérée]</strong> : Diagramme de séquence montrant l'interaction Client → JobTracker → TaskTrackers avec les différentes phases.</p>
+</blockquote>
+<hr />
+<h3 id="limitations-de-mapreduce-v1">⚠️ Limitations de MapReduce v1</h3>
+<p><strong>Problèmes identifiés</strong> :</p>
+<ol>
+<li>
+<p><strong>❌ Scalabilité limitée (passage à grande échelle)</strong>
+   - JobTracker unique devient un goulot d'étranglement
+   - Limite à ~4000 nœuds dans le cluster</p>
+</li>
+<li>
+<p><strong>❌ Utilisation inefficace des ressources</strong>
+   - Slots Map et Reduce fixes
+   - Un slot Map vide ne peut pas être utilisé par Reduce (et vice-versa)
+   - Gaspillage de ressources</p>
+</li>
+<li>
+<p><strong>❌ Manque de support pour d'autres moteurs</strong>
+   - Uniquement MapReduce supporté
+   - Impossible d'exécuter d'autres frameworks (Spark, Tez, etc.)
+   - Pas de traitement en temps réel (streaming)</p>
+</li>
+</ol>
+<blockquote>
+<p>🖼️ <strong>[Illustration suggérée]</strong> : Schéma montrant les slots Map et Reduce fixes avec certains slots vides mais inutilisables par l'autre type de tâche.</p>
+</blockquote>
+<hr />
+<h2 id="26-yarn-yet-another-resource-negotiator">2.6 YARN (Yet Another Resource Negotiator)</h2>
+<h3 id="definition-et-contexte">🎯 Définition et contexte</h3>
+<p><strong>YARN</strong> est le <strong>gestionnaire de ressources</strong> introduit dans <strong>Hadoop 2</strong> pour :
+- Améliorer la <strong>scalabilité</strong>
+- Augmenter la <strong>flexibilité</strong>
+- Optimiser l'<strong>efficacité</strong> du traitement des données dans le cluster</p>
+<p><strong>Innovation majeure</strong> : Sépare la <strong>gestion des ressources</strong> de la <strong>logique de traitement</strong></p>
+<p><strong>Conséquence</strong> : Hadoop peut supporter <strong>plusieurs moteurs d'exécution</strong> simultanément (MapReduce, Spark, Tez, etc.)</p>
+<hr />
+<h3 id="architecture-de-yarn">🏗️ Architecture de YARN</h3>
+<p>YARN introduit <strong>trois composants principaux</strong> :</p>
+<h4 id="1-resourcemanager-rm-le-maitre-du-cluster">1️⃣ <strong>ResourceManager (RM)</strong> - Le maître du cluster</h4>
+<p><strong>Rôle</strong> :
+- Gère toutes les <strong>ressources globales</strong> du cluster
+- Décide <strong>quelle application</strong> obtient <strong>quelles ressources</strong></p>
+<p><strong>Sous-composants</strong> :
+- <strong>Scheduler</strong> : Alloue les ressources (CPU, mémoire) aux applications
+- <strong>ApplicationsManager</strong> : Gère le cycle de vie des applications</p>
+<blockquote>
+<p>💡 Un seul ResourceManager par cluster (peut être en HA)</p>
+</blockquote>
+<hr />
+<h4 id="2-nodemanager-nm-gestionnaire-local">2️⃣ <strong>NodeManager (NM)</strong> - Gestionnaire local</h4>
+<p><strong>Rôle</strong> :
+- Présent sur <strong>chaque nœud</strong> du cluster
+- <strong>Exécute les conteneurs</strong> (containers)
+- <strong>Surveille les ressources locales</strong> (CPU, mémoire, disque)
+- Envoie des <strong>rapports d'état</strong> au ResourceManager</p>
+<blockquote>
+<p>💡 Équivalent moderne du TaskTracker mais plus flexible</p>
+</blockquote>
+<hr />
+<h4 id="3-applicationmaster-am-coordinateur-dapplication">3️⃣ <strong>ApplicationMaster (AM)</strong> - Coordinateur d'application</h4>
+<p><strong>Rôle</strong> :
+- <strong>Chaque application</strong> (job MapReduce, application Spark) a son <strong>propre ApplicationMaster</strong>
+- <strong>Négocie les ressources</strong> avec le ResourceManager
+- <strong>Coordonne les tâches</strong> de l'application
+- <strong>Surveille l'exécution</strong> des tâches</p>
+<blockquote>
+<p>💡 Contrairement au JobTracker unique, chaque job a son propre AM, ce qui améliore la scalabilité</p>
+</blockquote>
+<hr />
+<h3 id="flux-dexecution-dans-yarn">🔄 Flux d'exécution dans YARN</h3>
+<p><strong>Étapes</strong> :</p>
+<ol>
+<li>
+<p>Le <strong>client</strong> soumet une application au ResourceManager</p>
+</li>
+<li>
+<p>Le <strong>ResourceManager</strong> alloue un conteneur pour l'ApplicationMaster</p>
+</li>
+<li>
+<p>L'<strong>ApplicationMaster</strong> démarre et demande des ressources au ResourceManager</p>
+</li>
+<li>
+<p>Le <strong>ResourceManager</strong> alloue des conteneurs sur les NodeManagers</p>
+</li>
+<li>
+<p>L'<strong>ApplicationMaster</strong> lance les tâches dans les conteneurs</p>
+</li>
+<li>
+<p>Les <strong>NodeManagers</strong> exécutent les tâches et rapportent leur état</p>
+</li>
+<li>
+<p>L'<strong>ApplicationMaster</strong> collecte les résultats et libère les ressources</p>
+</li>
+</ol>
+<blockquote>
+<p>🖼️ <strong>[Illustration suggérée]</strong> : Architecture YARN complète avec ResourceManager, plusieurs NodeManagers, et ApplicationMasters.</p>
+</blockquote>
+<hr />
+<h3 id="comparaison-mapreduce-v1-vs-yarn">⚖️ Comparaison : MapReduce v1 vs YARN</h3>
+<h4 id="mapreduce-v1-hadoop-1x">MapReduce v1 (Hadoop 1.x)</h4>
+<pre><code>                    ┌──────────────────────┐
+                    │    JOBTRACKER        │
+                    │  (Point unique)      │
+                    │  - Gestion ressources│
+                    │  - Planification     │
+                    └──────────────────────┘
+                              │
+            ┌─────────────────┼─────────────────┐
+            ▼                 ▼                 ▼
+    ┌──────────────┐  ┌──────────────┐  ┌──────────────┐
+    │TASKTRACKER 1 │  │TASKTRACKER 2 │  │TASKTRACKER 3 │
+    │              │  │              │  │              │
+    │ Map Slots: 2 │  │ Map Slots: 2 │  │ Map Slots: 2 │
+    │ Red Slots: 2 │  │ Red Slots: 2 │  │ Red Slots: 2 │
+    └──────────────┘  └──────────────┘  └──────────────┘
+
+❌ Problème : Slots fixes, pas de flexibilité
+</code></pre>
+<h4 id="yarn-hadoop-2x">YARN (Hadoop 2.x+)</h4>
+<pre><code>                ┌────────────────────────────┐
+                │   RESOURCE MANAGER (RM)    │
+                │   - Allocation globale     │
+                │   - Scheduler              │
+                └────────────────────────────┘
+                              │
+            ┌─────────────────┼─────────────────┐
+            ▼                 ▼                 ▼
+    ┌──────────────┐  ┌──────────────┐  ┌──────────────┐
+    │NODE MANAGER 1│  │NODE MANAGER 2│  │NODE MANAGER 3│
+    │              │  │              │  │              │
+    │  [Container] │  │  [Container] │  │  [Container] │
+    │  [Container] │  │  [Container] │  │  [Container] │
+    │  [Container] │  │  [Container] │  │  [Container] │
+    └──────────────┘  └──────────────┘  └──────────────┘
+            │                 │                 │
+            ▼                 ▼                 ▼
+    ┌──────────────┐  ┌──────────────┐  ┌──────────────┐
+    │   APP        │  │   APP        │  │   APP        │
+    │   MASTER 1   │  │   MASTER 2   │  │   MASTER 3   │
+    └──────────────┘  └──────────────┘  └──────────────┘
+
+✅ Avantage : Conteneurs flexibles, plusieurs frameworks
+</code></pre>
+<p><strong>Tableau comparatif</strong> :</p>
+<table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>MapReduce v1</th>
+<th>YARN (Hadoop 2+)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Gestion ressources</strong></td>
+<td>JobTracker (unique)</td>
+<td>ResourceManager</td>
+</tr>
+<tr>
+<td><strong>Exécution locale</strong></td>
+<td>TaskTracker</td>
+<td>NodeManager</td>
+</tr>
+<tr>
+<td><strong>Coordination job</strong></td>
+<td>JobTracker</td>
+<td>ApplicationMaster (un par job)</td>
+</tr>
+<tr>
+<td><strong>Scalabilité</strong></td>
+<td>Limitée (~4000 nœuds)</td>
+<td>Très élevée (&gt;10 000 nœuds)</td>
+</tr>
+<tr>
+<td><strong>Utilisation ressources</strong></td>
+<td>Slots fixes (Map/Reduce)</td>
+<td>Conteneurs flexibles</td>
+</tr>
+<tr>
+<td><strong>Frameworks supportés</strong></td>
+<td>MapReduce uniquement</td>
+<td>MapReduce, Spark, Tez, Flink, etc.</td>
+</tr>
+<tr>
+<td><strong>Point unique de défaillance</strong></td>
+<td>Oui (JobTracker)</td>
+<td>Réduit (AM par job)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🖼️ <strong>[Illustration suggérée]</strong> : Schéma côte à côte comparant l'architecture MapReduce v1 et YARN.</p>
+</blockquote>
+<hr />
+<h3 id="caracteristiques-de-yarn">✨ Caractéristiques de YARN</h3>
+<h4 id="evolutivite-scalability">📈 <strong>Évolutivité (Scalability)</strong></h4>
+<p>✅ <strong>Architecture distribuée</strong>
+- Chaque job a son propre <strong>ApplicationMaster</strong>
+- Évite la surcharge d'un gestionnaire central unique</p>
+<p>✅ <strong>Exécution flexible</strong>
+- L'ApplicationMaster peut s'exécuter sur <strong>n'importe quel nœud</strong>
+- Reste actif jusqu'à la <strong>fin du job</strong></p>
+<p>✅ <strong>Amélioration modulaire</strong>
+- Séparation des fonctionnalités (RM, NM, AM)
+- Possibilité d'améliorer chaque composant <strong>indépendamment</strong></p>
+<hr />
+<h4 id="multi-locataires-multi-tenancy">🏢 <strong>Multi-locataires (Multi-tenancy)</strong></h4>
+<p>✅ <strong>Support de multiples moteurs d'exécution</strong>
+- <strong>Open-source</strong> : MapReduce, Spark, Tez, Flink
+- <strong>Propriétaires</strong> : frameworks personnalisés</p>
+<p>✅ <strong>Accès simultané</strong>
+- Plusieurs types d'applications peuvent accéder <strong>simultanément</strong> aux mêmes ensembles de données</p>
+<p>✅ <strong>Pool partagé de nœuds</strong>
+- Tous les travaux utilisent une <strong>piscule commune</strong> de ressources
+- Allocation dynamique selon les besoins</p>
+<blockquote>
+<p>💡 <strong>Exemple</strong> : Un même cluster peut exécuter simultanément des jobs MapReduce (batch), Spark (analytics) et Flink (streaming)</p>
+</blockquote>
+<hr />
+<h4 id="compatibilite-backward-compatibility">🔄 <strong>Compatibilité (Backward Compatibility)</strong></h4>
+<p>✅ <strong>Changements transparents pour les développeurs</strong>
+- Les API MapReduce restent <strong>inchangées</strong>
+- Même interface en ligne de commande (CLI)</p>
+<p>✅ <strong>Migration facile</strong>
+- Jobs MapReduce existants fonctionnent sur YARN
+- Peut nécessiter une <strong>recompilation</strong>, mais pas de réécriture</p>
+<hr />
+<h4 id="haute-utilisation-du-cluster">💪 <strong>Haute utilisation du cluster</strong></h4>
+<p>✅ <strong>Allocation dynamique</strong>
+- Pas de slots fixes (Map/Reduce)
+- Les ressources sont allouées selon les <strong>besoins réels</strong></p>
+<p>✅ <strong>Meilleure utilisation</strong>
+- CPU et mémoire utilisés de manière <strong>optimale</strong>
+- Pas de ressources gaspillées en attente</p>
+<p>✅ <strong>Gestion fine</strong>
+- Allocation au niveau du <strong>conteneur</strong> (granularité fine)
+- Flexibilité maximale</p>
+<hr />
+<h2 id="27-apache-pig">2.7 Apache Pig</h2>
+<h3 id="definition-et-contexte_1">🎯 Définition et contexte</h3>
+<p><strong>Apache Pig</strong> est un :
+- <strong>Langage de flux de données</strong> de haut niveau
+- Développé initialement par <strong>Yahoo!</strong> en 2006
+- Intégré à l'écosystème Apache Hadoop comme projet open source</p>
+<p><strong>Objectif principal</strong> : Simplifier le développement et l'exécution des tâches de traitement de données <strong>sans écrire d'implémentations Java complexes en MapReduce</strong>.</p>
+<hr />
+<h3 id="principe-fondamental">💡 Principe fondamental</h3>
+<p><strong>Pig Latin</strong> : Langage de script déclaratif</p>
+<p><strong>Avantages</strong> :
+- ✅ Environ <strong>10 lignes de code Pig</strong> = <strong>200 lignes de code MapReduce</strong>
+- ✅ <strong>Approche multi-requêtes</strong> : Une seule requête Pig peut effectuer plusieurs tâches MapReduce
+- ✅ <strong>Abstraction de la complexité</strong> de MapReduce</p>
+<blockquote>
+<p>💡 <strong>Analogie</strong> : Pig est à MapReduce ce que SQL est à la manipulation manuelle de fichiers</p>
+</blockquote>
+<hr />
+<h3 id="objectifs-cles-dapache-pig">🎯 Objectifs clés d'Apache Pig</h3>
+<h4 id="1-rendre-les-traitements-big-data-plus-accessibles">1️⃣ <strong>Rendre les traitements Big Data plus accessibles</strong></h4>
+<ul>
+<li>Analystes <strong>non-développeurs</strong> peuvent écrire des pipelines de données</li>
+<li>Pas besoin de connaître les détails de MapReduce</li>
+<li>Syntaxe intuitive et expressive</li>
+</ul>
+<hr />
+<h4 id="2-augmenter-la-productivite">2️⃣ <strong>Augmenter la productivité</strong></h4>
+<ul>
+<li>Un script Pig peut être <strong>10 à 20 fois plus court</strong> qu'un programme MapReduce équivalent en Java</li>
+<li>Développement plus rapide</li>
+<li>Maintenance simplifiée</li>
+</ul>
+<hr />
+<h4 id="3-assurer-une-execution-distribuee-evolutive">3️⃣ <strong>Assurer une exécution distribuée évolutive</strong></h4>
+<ul>
+<li>Pig s'appuie sur <strong>Hadoop</strong> et <strong>YARN</strong></li>
+<li>Transformation automatique :
+  <code>Script Pig Latin → Plan logique → Plan physique → Jobs MapReduce</code></li>
+<li>Exécution sur le cluster</li>
+</ul>
+<hr />
+<h4 id="4-manipuler-differents-types-de-donnees">4️⃣ <strong>Manipuler différents types de données</strong></h4>
+<ul>
+<li>Pig n'impose <strong>aucun modèle de données strict</strong></li>
+<li>Adapté aux données :</li>
+<li><strong>Structurées</strong> : CSV, TSV</li>
+<li><strong>Semi-structurées</strong> : JSON, XML</li>
+<li><strong>Non-structurées</strong> : logs, texte brut</li>
+</ul>
+<hr />
+<h4 id="5-offrir-une-extensibilite-maximale">5️⃣ <strong>Offrir une extensibilité maximale</strong></h4>
+<ul>
+<li>Fonctions Définies par l'Utilisateur (<strong>UDF</strong> - User Defined Functions)</li>
+<li>Support de multiples langages :</li>
+<li>✅ <strong>Java</strong></li>
+<li>✅ <strong>Python</strong></li>
+<li>✅ <strong>Ruby</strong></li>
+<li>✅ <strong>JavaScript</strong></li>
+</ul>
+<hr />
+<h3 id="apache-pig-vs-mapreduce">⚖️ Apache Pig vs MapReduce</h3>
+<table>
+<thead>
+<tr>
+<th>Critère</th>
+<th>Apache Pig</th>
+<th>MapReduce</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Niveau d'abstraction</strong></td>
+<td>Haut niveau (Pig Latin)</td>
+<td>Bas niveau (Java)</td>
+</tr>
+<tr>
+<td><strong>Facilité d'utilisation</strong></td>
+<td>✅ Très facile, scripts courts</td>
+<td>❌ Complexe, beaucoup de code</td>
+</tr>
+<tr>
+<td><strong>Approche</strong></td>
+<td>Dataflow (flux de transformations)</td>
+<td>Algorithmique (Map + Reduce)</td>
+</tr>
+<tr>
+<td><strong>Type de code</strong></td>
+<td>Scripts déclaratifs</td>
+<td>Code Java impératif</td>
+</tr>
+<tr>
+<td><strong>Temps de développement</strong></td>
+<td>✅ Rapide</td>
+<td>❌ Lent</td>
+</tr>
+<tr>
+<td><strong>Extensibilité</strong></td>
+<td>UDF (Python, Java, Ruby)</td>
+<td>Extensions Java uniquement</td>
+</tr>
+<tr>
+<td><strong>Exécution</strong></td>
+<td>Traduit en MapReduce, Tez ou Spark</td>
+<td>MapReduce uniquement</td>
+</tr>
+<tr>
+<td><strong>Cas d'utilisation</strong></td>
+<td>ETL, nettoyage, agrégations, logs</td>
+<td>Algorithmes complexes nécessitant contrôle total</td>
+</tr>
+<tr>
+<td><strong>Performance</strong></td>
+<td>Bonne (optimisée automatiquement)</td>
+<td>Très bonne si bien codé</td>
+</tr>
+<tr>
+<td><strong>Courbe d'apprentissage</strong></td>
+<td>✅ Faible</td>
+<td>❌ Élevée</td>
+</tr>
+<tr>
+<td><strong>Flexibilité des données</strong></td>
+<td>Très flexible (structurées, semi-structurées, logs)</td>
+<td>Dépend du développeur</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="utilisation-dapache-pig">🔧 Utilisation d'Apache Pig</h3>
+<p><strong>Apache Pig est utilisé pour</strong> :</p>
+<ol>
+<li>
+<p><strong>Traiter d'énormes ensembles de données</strong> :
+   - Journaux Web (logs)
+   - Données en ligne continues (streaming)</p>
+</li>
+<li>
+<p><strong>Plateformes de recherche</strong>
+   - Où différents types de données doivent être traités</p>
+</li>
+<li>
+<p><strong>Traitement en temps réel</strong> :
+   - Données pour algorithmes de Machine Learning
+   - Activités des utilisateurs sur les réseaux sociaux</p>
+</li>
+</ol>
+<p><strong>📊 Cas d'usage réels</strong> :</p>
+<p><strong>Yahoo!</strong> :
+- Utilise Pig pour ~<strong>40% de ses tâches</strong>
+- Flux d'actualités
+- Moteur de recherche</p>
+<p><strong>Twitter/X</strong> :
+- Extraction et analyse rapide des tweets
+- Analyse des retweets
+- Tendances comportementales
+- Génération de recommandations immédiates</p>
+<hr />
+<h3 id="architecture-apache-pig">🏗️ Architecture Apache Pig</h3>
+<p><strong>Composants principaux</strong> :</p>
+<ol>
+<li>
+<p><strong>Pig Latin</strong>
+   - Langage de haut niveau pour écrire les scripts
+   - Définit les opérations : chargement, filtrage, transformation, jointure, agrégation</p>
+</li>
+<li>
+<p><strong>Parser (Analyseur)</strong>
+   - Vérifie la syntaxe du script
+   - Génère un graphe de flux de données (DAG - Directed Acyclic Graph)</p>
+</li>
+<li>
+<p><strong>Optimizer (Optimiseur)</strong>
+   - Optimise le plan logique
+   - Réorganise les opérations pour améliorer les performances</p>
+</li>
+<li>
+<p><strong>Compiler (Compilateur)</strong>
+   - Transforme le plan logique optimisé en plan physique
+   - Génère les jobs MapReduce, Tez ou Spark</p>
+</li>
+<li>
+<p><strong>Execution Engine (Moteur d'exécution)</strong>
+   - Soumet les jobs au cluster Hadoop
+   - Exécute via MapReduce, Tez ou Spark</p>
+</li>
+</ol>
+<blockquote>
+<p>🖼️ <strong>[Illustration suggérée]</strong> : Pipeline de traitement : Script Pig Latin → Parser → Optimizer → Compiler → Execution Engine → Hadoop Cluster.</p>
+</blockquote>
+<hr />
+<h3 id="exemple-de-script-pig-latin">📝 Exemple de script Pig Latin</h3>
+<p><strong>Objectif</strong> : Compter le nombre d'occurrences de chaque mot dans un fichier</p>
+<pre><code class="language-pig">-- Charger les données
+lines = LOAD '/data/input.txt' AS (line:chararray);
+
+-- Tokeniser (découper en mots)
+words = FOREACH lines GENERATE FLATTEN(TOKENIZE(line)) AS word;
+
+-- Grouper par mot
+grouped = GROUP words BY word;
+
+-- Compter les occurrences
+wordcount = FOREACH grouped GENERATE group AS word, COUNT(words) AS count;
+
+-- Stocker le résultat
+STORE wordcount INTO '/data/output' USING PigStorage(',');
+</code></pre>
+<p><strong>Équivalent MapReduce</strong> : ~200 lignes de code Java !</p>
+<hr />
+<h2 id="28-apache-hive">2.8 Apache Hive</h2>
+<h3 id="definition_3">🎯 Définition</h3>
+<p><strong>Apache Hive</strong> est une infrastructure d'<strong>entrepôt de données (data warehouse)</strong> construite au-dessus de Hadoop pour :
+- Effectuer des <strong>requêtes SQL-like</strong> sur de grandes quantités de données
+- Fournir une <strong>abstraction SQL</strong> pour les données stockées dans HDFS
+- Permettre aux analystes familiers avec SQL d'exploiter Hadoop <strong>sans connaître MapReduce</strong></p>
+<p><strong>Langage</strong> : <strong>HiveQL</strong> (Hive Query Language), similaire à SQL</p>
+<hr />
+<h3 id="principe-fondamental_1">💡 Principe fondamental</h3>
+<p><strong>Hive transforme</strong> :</p>
+<pre><code>Requêtes HiveQL → Jobs MapReduce (ou Tez/Spark) → Exécution sur Hadoop
+</code></pre>
+<p><strong>Avantage</strong> : Les utilisateurs écrivent du SQL, Hive gère la complexité de MapReduce</p>
+<hr />
+<h3 id="architecture-de-hive">🏗️ Architecture de Hive</h3>
+<p><strong>Composants principaux</strong> :</p>
+<ol>
+<li>
+<p><strong>Hive Client</strong>
+   - <strong>CLI</strong> (Command Line Interface)
+   - <strong>JDBC/ODBC</strong> : Connexion depuis des outils externes
+   - <strong>Beeline</strong> : Client recommandé (plus sécurisé)</p>
+</li>
+<li>
+<p><strong>Hive Services</strong>
+   - <strong>Driver</strong> : Gère le cycle de vie des requêtes
+   - <strong>Compiler</strong> : Transforme HiveQL en plan d'exécution
+   - <strong>Optimizer</strong> : Optimise le plan
+   - <strong>Execution Engine</strong> : Exécute le plan sur Hadoop</p>
+</li>
+<li>
+<p><strong>Metastore</strong>
+   - Base de données (MySQL, PostgreSQL, Derby) stockant :</p>
+<ul>
+<li>Schémas des tables</li>
+<li>Métadonnées (colonnes, types, partitions)</li>
+<li>Localisation des données dans HDFS</li>
+</ul>
+</li>
+<li>
+<p><strong>Hadoop</strong>
+   - HDFS : Stockage des données
+   - MapReduce/Tez/Spark : Exécution des requêtes</p>
+</li>
+</ol>
+<blockquote>
+<p>🖼️ <strong>[Illustration suggérée]</strong> : Architecture Hive avec Client → Driver → Metastore → Execution Engine → HDFS.</p>
+</blockquote>
+<hr />
+<h3 id="cas-dusage-de-hive">📊 Cas d'usage de Hive</h3>
+<p>✅ <strong>Requêtes ad-hoc</strong> sur de grandes quantités de données</p>
+<p>✅ <strong>Data warehousing</strong> : Création d'entrepôts de données</p>
+<p>✅ <strong>Reporting et analytique</strong> : Génération de rapports business</p>
+<p>✅ <strong>ETL</strong> : Extraction, transformation, chargement de données</p>
+<p>✅ <strong>Analyse de logs</strong> : Requêtes sur des téraoctets de logs</p>
+<p><strong>Limitations</strong> :
+- ❌ Pas adapté au <strong>traitement en temps réel</strong> (latence élevée)
+- ❌ Pas conçu pour les <strong>transactions OLTP</strong> (pas de UPDATE/DELETE efficace)
+- ✅ Optimisé pour les <strong>lectures massives</strong> (OLAP)</p>
+<hr />
+<h2 id="29-apache-sqoop">2.9 Apache Sqoop</h2>
+<h3 id="definition_4">🎯 Définition</h3>
+<p><strong>Apache Sqoop</strong> (<strong>SQL to Hadoop</strong>) est un outil conçu pour :
+- <strong>Transférer efficacement</strong> des données entre Hadoop et les bases de données relationnelles
+- <strong>Importer</strong> des données depuis des SGBDR vers HDFS/Hive/HBase
+- <strong>Exporter</strong> des données depuis Hadoop vers des SGBDR</p>
+<p><strong>Prononciation</strong> : "Scoop" (comme une pelle)</p>
+<hr />
+<h3 id="principe-de-fonctionnement">💡 Principe de fonctionnement</h3>
+<p><strong>Import</strong> :</p>
+<pre><code>Base de données SQL → Sqoop → MapReduce → HDFS/Hive/HBase
+</code></pre>
+<p><strong>Export</strong> :</p>
+<pre><code>HDFS/Hive/HBase → Sqoop → MapReduce → Base de données SQL
+</code></pre>
+<p><strong>Particularité</strong> : Sqoop utilise <strong>uniquement des Mappers</strong> (pas de Reducers)
+- Les données sont lues/écrites directement
+- Pas besoin d'agrégation</p>
+<hr />
+<h3 id="architecture-sqoop-2">🏗️ Architecture Sqoop 2</h3>
+<h4 id="1-sqoop-client">1️⃣ <strong>Sqoop Client</strong></h4>
+<p>Deux modes d'accès :
+- <strong>CLI (Command Line Interface)</strong> : Ligne de commande
+- <strong>Browser (Interface Web)</strong> : Interface REST/UI</p>
+<p>Ces deux méthodes envoient les requêtes vers le serveur Sqoop.</p>
+<hr />
+<h4 id="2-sqoop-server">2️⃣ <strong>Sqoop Server</strong></h4>
+<p>Intermédiaire intelligent entre le client et les systèmes sources/destination.</p>
+<p><strong>Modules</strong> :
+- <strong>REST</strong> : Interface RESTful pour clients externes
+- <strong>UI</strong> : Interface graphique de gestion
+- <strong>Job Manager</strong> : Création, configuration, exécution et suivi des jobs
+- <strong>Connector Manager</strong> : Gestion des connecteurs
+- <strong>Connectors</strong> : Modules spécialisés pour bases relationnelles, data warehouses, etc.
+- <strong>Metadata</strong> : Informations sur jobs, connexions, exécutions (stockées dans Metadata Repository)</p>
+<hr />
+<h4 id="3-sources-et-destinations">3️⃣ <strong>Sources et Destinations</strong></h4>
+<ul>
+<li>Bases de données relationnelles (MySQL, PostgreSQL, Oracle, SQL Server)</li>
+<li>Data Warehouses (Teradata, Netezza)</li>
+<li>Hadoop (HDFS, Hive, HBase)</li>
+</ul>
+<hr />
+<h4 id="4-hadoop">4️⃣ <strong>Hadoop</strong></h4>
+<p>Lorsque Sqoop exécute un job :
+- Le serveur soumet des <strong>Map Tasks</strong> au cluster Hadoop
+- Les mappers lisent/écrivent les données
+- Les données transitent par HDFS, HBase ou Hive</p>
+<blockquote>
+<p>🖼️ <strong>[Illustration suggérée]</strong> : Architecture complète Sqoop 2 avec User → Client (CLI/Browser) → Server (modules) → Sources/Hadoop.</p>
+</blockquote>
+<hr />
+<h3 id="fonctionnement-de-sqoop-import">🔄 Fonctionnement de Sqoop (Import)</h3>
+<p><strong>Étapes</strong> :</p>
+<p><strong>Étape 1 : Connexion</strong>
+- Sqoop se connecte à la base de données via <strong>JDBC</strong></p>
+<p><strong>Étape 2 : Découverte du schéma</strong>
+- Sqoop récupère :
+  - Colonnes
+  - Types de données
+  - Clé primaire
+  - Contraintes</p>
+<p><strong>Étape 3 : Partitionnement</strong>
+- Pour paralléliser, Sqoop découpe les données selon une colonne <strong>split-by</strong>
+- Exemple : colonne <code>id</code> de 1 à 100 000 → divisée en 4 ranges</p>
+<p><strong>Étape 4 : Exécution MapReduce</strong>
+- Chaque mapper exécute une requête SQL différente :
+  <code>sql
+  Mapper 1: SELECT * FROM employees WHERE id &gt;= 1 AND id &lt; 25000;
+  Mapper 2: SELECT * FROM employees WHERE id &gt;= 25000 AND id &lt; 50000;
+  Mapper 3: SELECT * FROM employees WHERE id &gt;= 50000 AND id &lt; 75000;
+  Mapper 4: SELECT * FROM employees WHERE id &gt;= 75000 AND id &lt;= 100000;</code></p>
+<blockquote>
+<p>🖼️ <strong>[Illustration suggérée]</strong> : Diagramme montrant 1 table SQL divisée en 4 ranges → 4 mappers → données écrites dans HDFS.</p>
+</blockquote>
+<hr />
+<h3 id="commandes-sqoop-essentielles">💻 Commandes Sqoop essentielles</h3>
+<h4 id="commandes-dinformation">📋 Commandes d'information</h4>
+<pre><code class="language-bash"># Afficher l'aide
+sqoop help
+
+# Afficher l'aide pour une commande spécifique
+sqoop help import
+
+# Vérifier la version
+sqoop version
+</code></pre>
+<hr />
+<h4 id="commandes-dexploration">🔍 Commandes d'exploration</h4>
+<pre><code class="language-bash"># Lister toutes les bases de données
+sqoop list-databases \
+  --connect jdbc:mysql://localhost/ \
+  --username root \
+  --password cloudera
+
+# Lister toutes les tables d'une base
+sqoop list-tables \
+  --connect jdbc:mysql://localhost/retail_db \
+  --username root \
+  --password cloudera
+
+# Exécuter une requête SQL rapide
+sqoop eval \
+  --connect jdbc:mysql://localhost/ventes \
+  --username root \
+  --password cloudera \
+  --query &quot;SELECT * FROM clients&quot;
+</code></pre>
+<hr />
+<h4 id="commandes-dimport">📥 Commandes d'import</h4>
+<p><strong>Import simple vers HDFS</strong> :</p>
+<pre><code class="language-bash">sqoop import \
+  --connect jdbc:mysql://localhost/ventes \
+  --username root \
+  --password cloudera \
+  --table clients \
+  --target-dir /user/cloudera/clients
+</code></pre>
+<p><strong>Import avec sélection de colonnes</strong> :</p>
+<pre><code class="language-bash">sqoop import \
+  --connect jdbc:mysql://localhost/ventes \
+  --username root \
+  --password cloudera \
+  --table clients \
+  --columns &quot;id_client,nom&quot; \
+  --target-dir /user/cloudera/clients_selection
+</code></pre>
+<p><strong>Import via requête SQL</strong> :</p>
+<pre><code class="language-bash">sqoop import \
+  --connect jdbc:mysql://localhost/ventes \
+  --username root \
+  --password cloudera \
+  --target-dir /user/cloudera/clients_filtre \
+  --query &quot;SELECT id_client, nom FROM clients WHERE age &lt; 23 AND \$CONDITIONS&quot; \
+  --num-mappers 1
+</code></pre>
+<p><strong>Import avec parallélisme</strong> :</p>
+<pre><code class="language-bash">sqoop import \
+  --connect jdbc:mysql://localhost/ventes \
+  --username root \
+  --password cloudera \
+  --table clients \
+  --split-by id_client \
+  --num-mappers 4 \
+  --target-dir /user/cloudera/clients_parallel
+</code></pre>
+<p><strong>Import directement dans Hive</strong> :</p>
+<pre><code class="language-bash">sqoop import \
+  --connect jdbc:mysql://localhost/ventes \
+  --username root \
+  --password cloudera \
+  --table clients \
+  --hive-import \
+  --hive-table clients_hive
+</code></pre>
+<hr />
+<h4 id="commandes-dexport">📤 Commandes d'export</h4>
+<p><strong>Export simple depuis HDFS vers SQL</strong> :</p>
+<pre><code class="language-bash">sqoop export \
+  --connect jdbc:mysql://localhost/ventes \
+  --username root \
+  --password cloudera \
+  --table clients_export \
+  --export-dir /user/cloudera/clients
+</code></pre>
+<hr />
+<h4 id="gestion-des-jobs">🔄 Gestion des jobs</h4>
+<pre><code class="language-bash"># Créer un job réutilisable
+sqoop job --create mon_import \
+  -- import \
+  --connect jdbc:mysql://localhost/ventes \
+  --username root \
+  --table clients
+
+# Lister tous les jobs
+sqoop job --list
+
+# Exécuter un job
+sqoop job --exec mon_import
+
+# Supprimer un job
+sqoop job --delete mon_import
+</code></pre>
+<hr />
+<h2 id="210-apache-flume">2.10 Apache Flume</h2>
+<h3 id="definition_5">🎯 Définition</h3>
+<p><strong>Apache Flume</strong> est un service distribué, fiable et disponible pour :
+- <strong>Collecter</strong> efficacement des données de flux continu
+- <strong>Agréger</strong> ces données
+- <strong>Transférer</strong> de grandes quantités de données de log</p>
+<p><strong>Cas d'usage typique</strong> : Ingestion de logs en temps réel vers HDFS</p>
+<hr />
+<h3 id="concepts-cles">💡 Concepts clés</h3>
+<p><strong>Agent Flume</strong> : Processus JVM qui héberge les composants par lesquels les événements transitent.</p>
+<p><strong>Event (Événement)</strong> : Unité de base des données dans Flume
+- <strong>Header</strong> : Paires clé/valeur (métadonnées)
+- <strong>Body</strong> : Tableau de bytes (données brutes)</p>
+<hr />
+<h3 id="architecture-dun-agent-flume">🏗️ Architecture d'un Agent Flume</h3>
+<p>Un agent Flume contient 3 composants essentiels :</p>
+<pre><code>┌────────────────────────────────────────────────────────────────┐
+│                      AGENT FLUME                               │
+│                                                                │
+│  ┌──────────┐      ┌──────────┐      ┌──────────┐            │
+│  │          │      │          │      │          │            │
+│  │  SOURCE  │─────▶│ CHANNEL  │─────▶│   SINK   │            │
+│  │          │      │(Buffer)  │      │          │            │
+│  └──────────┘      └──────────┘      └──────────┘            │
+│       │                 │                  │                  │
+│       ▼                 ▼                  ▼                  │
+│  ┌──────────┐      ┌──────────┐      ┌──────────┐            │
+│  │ Exec     │      │ Memory   │      │  HDFS    │            │
+│  │ Syslog   │      │ File     │      │  HBase   │            │
+│  │ HTTP     │      │ Kafka    │      │  Kafka   │            │
+│  │ Kafka    │      │          │      │  Logger  │            │
+│  └──────────┘      └──────────┘      └──────────┘            │
+│                                                                │
+│  ┌──────────────────────────────────────────────────────┐     │
+│  │           INTERCEPTORS (optionnel)                   │     │
+│  │  - Ajout timestamp                                   │     │
+│  │  - Filtrage par type                                 │     │
+│  │  - Enrichissement métadonnées                        │     │
+│  └──────────────────────────────────────────────────────┘     │
+└────────────────────────────────────────────────────────────────┘
+</code></pre>
+<h4 id="1-source-entree-des-donnees">1️⃣ <strong>Source (Entrée des données)</strong></h4>
+<p><strong>Rôle</strong> : Point d'entrée des données dans l'agent</p>
+<p><strong>Types de Sources</strong> :</p>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Exec Source</strong></td>
+<td>Exécute une commande Unix (ex: <code>tail -F log.txt</code>)</td>
+</tr>
+<tr>
+<td><strong>Spooling Directory</strong></td>
+<td>Surveille un répertoire pour nouveaux fichiers</td>
+</tr>
+<tr>
+<td><strong>Syslog Source</strong></td>
+<td>Réception de logs syslog</td>
+</tr>
+<tr>
+<td><strong>HTTP Source</strong></td>
+<td>Reçoit des événements via HTTP POST</td>
+</tr>
+<tr>
+<td><strong>Kafka Source</strong></td>
+<td>Consomme depuis un topic Kafka</td>
+</tr>
+<tr>
+<td><strong>Avro Source</strong></td>
+<td>Reçoit des événements d'un autre agent Flume</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h4 id="2-channel-buffercanal">2️⃣ <strong>Channel (Buffer/Canal)</strong></h4>
+<p><strong>Rôle</strong> : Cœur de l'agent, gère la fiabilité et la tolérance aux pannes</p>
+<p><strong>Fonctions</strong> :
+- Agit comme <strong>file d'attente</strong> entre Source et Sink
+- Réalise la <strong>transaction</strong> (garantit que les données ne sont pas perdues)
+- Empêche le <strong>backpressure</strong> (contre-pression)</p>
+<p><strong>Types de Channels</strong> :</p>
+<table>
+<thead>
+<tr>
+<th>Channel</th>
+<th>Avantages</th>
+<th>Inconvénients</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Memory</strong></td>
+<td>Très rapide</td>
+<td>Perte de données en cas de crash</td>
+</tr>
+<tr>
+<td><strong>File</strong></td>
+<td>Fiable (persistant sur disque)</td>
+<td>Plus lent</td>
+</tr>
+<tr>
+<td><strong>Kafka</strong></td>
+<td>Haute scalabilité, résilient</td>
+<td>Nécessite Kafka</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ Sans canal, impossible de connecter source et sink !</p>
+</blockquote>
+<hr />
+<h4 id="3-sink-sortie-des-donnees">3️⃣ <strong>Sink (Sortie des données)</strong></h4>
+<p><strong>Rôle</strong> : Écrit les événements du canal vers leur destination finale</p>
+<p><strong>Types de Sinks</strong> :</p>
+<table>
+<thead>
+<tr>
+<th>Sink</th>
+<th>Destination</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>HDFS Sink</strong></td>
+<td>Écriture dans HDFS (Parquet, SequenceFile, TextFile)</td>
+</tr>
+<tr>
+<td><strong>HBase Sink</strong></td>
+<td>Insertion dans tables HBase</td>
+</tr>
+<tr>
+<td><strong>Kafka Sink</strong></td>
+<td>Publication dans Kafka</td>
+</tr>
+<tr>
+<td><strong>File Roll Sink</strong></td>
+<td>Stockage dans fichiers locaux</td>
+</tr>
+<tr>
+<td><strong>Logger Sink</strong></td>
+<td>Console / logs (debug)</td>
+</tr>
+<tr>
+<td><strong>ElasticSearch Sink</strong></td>
+<td>Indexation dans ElasticSearch</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>🖼️ <strong>[Illustration suggérée]</strong> : Schéma d'un agent Flume avec Source → Channel → Sink.</p>
+</blockquote>
+<hr />
+<h3 id="composants-additionnels-dans-un-agent">🔧 Composants additionnels dans un agent</h3>
+<h4 id="intercepteurs"><strong>Intercepteurs</strong></h4>
+<p><strong>Rôle</strong> :
+- Interceptent, modifient ou filtrent les événements <strong>avant</strong> qu'ils entrent dans le canal
+- Traitement léger sur chaque événement
+- Enrichissement des données</p>
+<p><strong>Cas d'usage</strong> :
+- Ajouter un timestamp aux événements
+- Filtrer uniquement les logs de type ERROR
+- Ajouter des métadonnées (source IP, application)</p>
+<hr />
+<h4 id="selecteurs-de-canal-channel-selectors"><strong>Sélecteurs de canal (Channel Selectors)</strong></h4>
+<p><strong>Rôle</strong> : Routage des événements entre une Source et <strong>plusieurs Channels</strong></p>
+<p><strong>Types</strong> :
+- <strong>Replicating</strong> : Copie chaque événement dans <strong>tous</strong> les canaux
+- <strong>Multiplexing</strong> : Route vers un canal spécifique basé sur une règle</p>
+<hr />
+<h4 id="sink-processors"><strong>Sink Processors</strong></h4>
+<p><strong>Rôle</strong> : Gèrent le comportement d'un sink</p>
+<p><strong>Types</strong> :
+- <strong>Failover</strong> : Si un sink échoue, un autre prend le relais
+- <strong>Load Balancing</strong> : Répartit la charge entre plusieurs sinks</p>
+<hr />
+<h3 id="modes-de-circulation-des-donnees-data-flow-patterns">🌊 Modes de circulation des données (Data Flow Patterns)</h3>
+<h4 id="1-flux-multi-sauts-multi-hop-flow">1️⃣ <strong>Flux multi-sauts (Multi-hop Flow)</strong></h4>
+<p><strong>Principe</strong> : Un événement traverse <strong>plusieurs agents Flume successifs</strong> avant d'atteindre sa destination finale.</p>
+<pre><code>┌──────────┐      ┌──────────┐      ┌──────────┐      ┌──────────┐
+│ Agent 1  │─────▶│ Agent 2  │─────▶│ Agent 3  │─────▶│   HDFS   │
+│ (Source) │      │ (Relais) │      │ (Relais) │      │          │
+└──────────┘      └──────────┘      └──────────┘      └──────────┘
+   Serveur           Serveur           Serveur          Stockage
+   Web 1             Web 2             Agrégation       Final
+</code></pre>
+<p><strong>Structure</strong> :</p>
+<pre><code>Agent 1 (Source) → Agent 2 (Relais) → Agent 3 (Relais) → HDFS
+</code></pre>
+<p><strong>Cas d'usage</strong> :
+- Collecte distribuée géographiquement
+- Agrégation progressive des données</p>
+<hr />
+<h4 id="2-fan-out-flux-en-eventail">2️⃣ <strong>Fan-out (Flux en éventail)</strong></h4>
+<p><strong>Principe</strong> : Une seule source envoie les événements vers <strong>plusieurs canaux ou destinations</strong>.</p>
+<pre><code>                        ┌──────────┐
+                        │ Source   │
+                        │ Unique   │
+                        └────┬─────┘
+                             │
+                ┌────────────┼────────────┐
+                │            │            │
+                ▼            ▼            ▼
+           ┌────────┐   ┌────────┐   ┌────────┐
+           │ HDFS   │   │ HBase  │   │ Kafka  │
+           └────────┘   └────────┘   └────────┘
+           Archive      Temps réel   Streaming
+</code></pre>
+<p><strong>Types</strong> :
+- <strong>Réplication</strong> : Événements dupliqués, chaque canal reçoit une copie complète
+- <strong>Multiplexage</strong> : Événements routés vers un canal précis selon une règle</p>
+<p><strong>Cas d'usage</strong> :
+- Archivage + analyse en temps réel
+- Envoi vers HDFS + HBase simultanément</p>
+<hr />
+<h4 id="3-fan-in-convergence-multiple">3️⃣ <strong>Fan-in (Convergence multiple)</strong></h4>
+<p><strong>Principe</strong> : <strong>Plusieurs sources ou agents</strong> envoient leurs événements vers <strong>un seul canal ou destination</strong>.</p>
+<pre><code>┌──────────┐
+│ Source 1 │────┐
+└──────────┘    │
+                │     ┌──────────┐      ┌──────────┐
+┌──────────┐    ├────▶│  Canal   │─────▶│   HDFS   │
+│ Source 2 │────┤     │  Unique  │      │          │
+└──────────┘    │     └──────────┘      └──────────┘
+                │
+┌──────────┐    │
+│ Source 3 │────┘
+└──────────┘
+</code></pre>
+<p><strong>Cas d'usage</strong> :
+- Centralisation de logs depuis plusieurs serveurs web
+- Agrégation de données de plusieurs data centers</p>
+<blockquote>
+<p>🖼️ <strong>[Illustration suggérée]</strong> : Plusieurs sources convergeant vers un seul canal (forme d'entonnoir).</p>
+</blockquote>
+<hr />
+<h3 id="exemple-de-configuration-dun-agent-flume">📝 Exemple de configuration d'un agent Flume</h3>
+<p><strong>Fichier</strong> : <code>agent1.conf</code></p>
+<pre><code class="language-properties"># =============================
+# DÉCLARATION DES COMPOSANTS
+# =============================
+agent1.sources = src1
+agent1.channels = ch1
+agent1.sinks = sk1
+
+# =============================
+# CONFIGURATION SOURCE
+# =============================
+# Type de source : EXEC (exécution d'une commande)
+agent1.sources.src1.type = exec
+# tail -F permet de suivre en temps réel un fichier de log
+agent1.sources.src1.command = tail -F /home/cloudera/flume_tp/app.log
+# Canal de destination
+agent1.sources.src1.channels = ch1
+
+# =============================
+# CONFIGURATION CHANNEL
+# =============================
+# Type : mémoire (rapide mais volatile)
+agent1.channels.ch1.type = memory
+# Capacité totale : 1000 événements
+agent1.channels.ch1.capacity = 1000
+# Nombre max d'événements par transaction
+agent1.channels.ch1.transactionCapacity = 100
+
+# =============================
+# CONFIGURATION SINK
+# =============================
+# Type : HDFS
+agent1.sinks.sk1.type = hdfs
+# Canal source
+agent1.sinks.sk1.channel = ch1
+# Chemin HDFS de destination
+agent1.sinks.sk1.hdfs.path = /user/cloudera/flume/logs_tp1
+# Type de fichier : flux de données (texte brut)
+agent1.sinks.sk1.hdfs.fileType = DataStream
+# Format d'écriture : texte
+agent1.sinks.sk1.hdfs.writeFormat = Text
+# Rotation de fichier toutes les 10 secondes
+agent1.sinks.sk1.hdfs.rollInterval = 10
+</code></pre>
+<p><strong>Lancement de l'agent</strong> :</p>
+<pre><code class="language-bash">flume-ng agent \
+  --conf /etc/flume/conf \
+  --conf-file agent1.conf \
+  --name agent1
+</code></pre>
+<hr />
+<h1 id="partie-3-ecosysteme-spark">📘 Partie 3 : Écosystème Spark</h1>
+<h2 id="31-contexte-et-motivations">3.1 Contexte et motivations</h2>
+<h3 id="limites-de-hadoop-mapreduce">⚠️ Limites de Hadoop MapReduce</h3>
+<p><strong>Problèmes identifiés</strong> :</p>
+<ol>
+<li>
+<p><strong>❌ Latence élevée</strong>
+   - MapReduce écrit <strong>systématiquement</strong> les résultats intermédiaires sur disque (HDFS)
+   - Performances médiocres pour traitements complexes et itératifs</p>
+</li>
+<li>
+<p><strong>❌ Pas adapté au temps réel</strong>
+   - Besoin de rapidité : applications modernes nécessitent des temps de réponse <strong>quasi interactifs</strong></p>
+</li>
+<li>
+<p><strong>❌ Mauvaises performances pour algorithmes itératifs</strong>
+   - Explosion des algorithmes itératifs (Machine Learning, Graphes)
+   - Algorithmes ML (k-means, régression) nécessitent <strong>plusieurs itérations</strong> sur les mêmes données
+   - MapReduce relit et réécrit les données à chaque itération</p>
+</li>
+<li>
+<p><strong>❌ Modèle de programmation bas niveau</strong>
+   - MapReduce impose un modèle <strong>map/reduce</strong> rigide
+   - Besoin d'une programmation plus <strong>simple et expressive</strong></p>
+</li>
+<li>
+<p><strong>❌ Pas de support streaming</strong>
+   - Systèmes modernes exigent des traitements <strong>streaming</strong> et <strong>quasi temps réel</strong> (logs, IoT, réseaux sociaux)</p>
+</li>
+<li>
+<p><strong>❌ Besoin d'un moteur unifié</strong>
+   - Batch, streaming, ML, graphes nécessitaient des outils séparés</p>
+</li>
+</ol>
+<blockquote>
+<p>🎯 <strong>Besoin</strong> : Un framework <strong>rapide</strong>, <strong>flexible</strong> et <strong>unifié</strong></p>
+</blockquote>
+<hr />
+<h2 id="32-origine-et-evolution-de-spark">3.2 Origine et évolution de Spark</h2>
+<h3 id="chronologie">📅 Chronologie</h3>
+<p><strong>2009</strong> : Développement initial au laboratoire <strong>AMPLab</strong> de l'<strong>Université de Berkeley</strong>
+- Conçu comme alternative plus <strong>rapide</strong> et <strong>flexible</strong> à MapReduce</p>
+<p><strong>2013</strong> : Don à la <strong>Fondation Apache</strong>
+- Devient rapidement l'un des projets les plus actifs de l'écosystème Big Data</p>
+<p><strong>Aujourd'hui</strong> : Largement adopté par :
+- Entreprises (Netflix, Uber, Airbnb, etc.)
+- Universités
+- Centres de recherche</p>
+<hr />
+<h2 id="33-definition-dapache-spark">3.3 Définition d'Apache Spark</h2>
+<p><strong>Apache Spark</strong> est un framework <strong>open-source unifié</strong> pour le traitement de données massives (Big Data).</p>
+<p><strong>Caractéristiques</strong> :
+- ⚡ <strong>Rapide</strong> : Calcul en mémoire (in-memory processing)
+- 📈 <strong>Évolutif</strong> : Peut gérer de petits à très gros clusters
+- 🎨 <strong>Polyvalent</strong> : Supporte multiples types de traitement</p>
+<p><strong>Performance</strong> :
+- Jusqu'à <strong>100 fois plus rapide</strong> que Hadoop MapReduce pour certaines tâches itératives</p>
+<hr />
+<h3 id="domaines-dexcellence-de-spark">🎯 Domaines d'excellence de Spark</h3>
+<p>✅ <strong>Traitement batch (par lots)</strong>
+- ETL, transformation de données
+- Agrégations complexes</p>
+<p>✅ <strong>Streaming en temps réel</strong>
+- Analyse de flux continus
+- Traitement quasi temps réel</p>
+<p>✅ <strong>Requêtes SQL</strong>
+- Requêtes interactives sur grands volumes</p>
+<p>✅ <strong>Machine Learning</strong>
+- Algorithmes ML distribués
+- Entraînement de modèles</p>
+<p>✅ <strong>Traitement de graphes</strong>
+- Analyse de réseaux sociaux
+- Algorithmes de graphes (PageRank, etc.)</p>
+<hr />
+<h3 id="langages-supportes">💻 Langages supportés</h3>
+<p>Spark supporte <strong>plusieurs langages</strong> :</p>
+<ul>
+<li>✅ <strong>Scala</strong> (langage natif de Spark)</li>
+<li>✅ <strong>Java</strong></li>
+<li>✅ <strong>Python</strong> (PySpark)</li>
+<li>✅ <strong>R</strong> (SparkR)</li>
+<li>✅ <strong>SQL</strong> (Spark SQL)</li>
+</ul>
+<blockquote>
+<p>💡 Cette flexibilité permet aux développeurs d'utiliser le langage de leur choix !</p>
+</blockquote>
+<hr />
+<h2 id="34-caracteristiques-principales-de-spark">3.4 Caractéristiques principales de Spark</h2>
+<h3 id="1-calcul-en-memoire-in-memory-computation">⚡ 1. Calcul en mémoire (In-memory Computation)</h3>
+<p><strong>Principe</strong> :
+- Spark stocke les données dans la <strong>mémoire vive (RAM)</strong> des serveurs
+- Accès <strong>ultra-rapide</strong> aux données
+- Évite les lectures/écritures disque répétées</p>
+<p><strong>Avantage</strong> :
+- ✅ Accélération <strong>considérable</strong> de la vitesse des analyses
+- ✅ Particulièrement efficace pour les algorithmes itératifs</p>
+<p><strong>Comparaison</strong> :</p>
+<pre><code>MapReduce : Disque → Calcul → Disque → Calcul → Disque
+Spark     : Disque → RAM → Calcul → Calcul → Calcul → Disque
+</code></pre>
+<blockquote>
+<p>🖼️ <strong>[Illustration suggérée]</strong> : Diagramme comparant MapReduce (multiples accès disque) vs Spark (données en mémoire).</p>
+</blockquote>
+<hr />
+<h3 id="2-traitement-distribue-utilisant-la-parallelisation">🔄 2. Traitement distribué utilisant la parallélisation</h3>
+<p><strong>Principe</strong> :
+- Les données sont <strong>partitionnées</strong> sur plusieurs nœuds
+- Les calculs s'exécutent <strong>en parallèle</strong> sur ces partitions
+- Utilise pleinement les <strong>ressources du cluster</strong></p>
+<p><strong>Structure</strong> :
+- <strong>Driver</strong> : Coordonne l'exécution
+- <strong>Executors</strong> : Exécutent les tâches sur les partitions</p>
+<blockquote>
+<p>💡 Scalabilité : Peut passer de 1 machine à des milliers de nœuds</p>
+</blockquote>
+<hr />
+<h3 id="3-abstraction-de-donnees-rdd-dataframe-dataset">📊 3. Abstraction de données : RDD, DataFrame, Dataset</h3>
+<p>Spark fournit <strong>trois niveaux d'abstraction</strong> pour manipuler les données :</p>
+<h4 id="rdd-resilient-distributed-dataset"><strong>RDD (Resilient Distributed Dataset)</strong></h4>
+<ul>
+<li>Abstraction de <strong>bas niveau</strong></li>
+<li>Collection distribuée et immuable d'objets</li>
+<li>Tolérant aux pannes (Resilient)</li>
+<li>Utilisé en Scala/Java/Python</li>
+</ul>
+<h4 id="dataframe"><strong>DataFrame</strong></h4>
+<ul>
+<li>Abstraction de <strong>moyen niveau</strong></li>
+<li>Données organisées en <strong>colonnes nommées</strong> (comme une table SQL)</li>
+<li>Optimisations automatiques (Catalyst Optimizer)</li>
+<li>API disponible en Python, Scala, Java, R</li>
+</ul>
+<h4 id="dataset"><strong>Dataset</strong></h4>
+<ul>
+<li>Abstraction de <strong>haut niveau</strong> (Scala/Java uniquement)</li>
+<li>Combine avantages de RDD (type-safety) et DataFrame (optimisations)</li>
+<li>Fortement typé</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Recommandation</strong> : Utiliser DataFrame/Dataset pour la plupart des cas d'usage (meilleures performances)</p>
+</blockquote>
+<hr />
+<h3 id="4-framework-unifie">🌐 4. Framework unifié</h3>
+<p><strong>Principe</strong> : Spark fournit <strong>un seul framework</strong> pour :</p>
+<ul>
+<li><strong>Spark Core</strong> : Traitement batch</li>
+<li><strong>Spark SQL</strong> : Requêtes SQL et DataFrames</li>
+<li><strong>Spark Streaming</strong> : Traitement de flux temps réel</li>
+<li><strong>MLlib</strong> : Machine Learning</li>
+<li><strong>GraphX</strong> : Traitement de graphes</li>
+</ul>
+<p><strong>Avantage</strong> :
+- ✅ Pas besoin d'apprendre plusieurs outils
+- ✅ Code réutilisable entre différents types de traitement
+- ✅ Partage de données entre les modules</p>
+<blockquote>
+<p>🖼️ <strong>[Illustration suggérée]</strong> : Schéma montrant Spark Core au centre avec 4 modules (SQL, Streaming, MLlib, GraphX) autour.</p>
+</blockquote>
+<hr />
+<h3 id="5-support-de-multiples-sources-de-donnees">🔌 5. Support de multiples sources de données</h3>
+<p>Spark peut lire et écrire depuis/vers :</p>
+<p><strong>Stockage distribué</strong> :
+- ✅ HDFS
+- ✅ Amazon S3
+- ✅ Azure Blob Storage
+- ✅ Google Cloud Storage</p>
+<p><strong>Bases de données</strong> :
+- ✅ Cassandra
+- ✅ HBase
+- ✅ MongoDB
+- ✅ Bases SQL (via JDBC)</p>
+<p><strong>Formats de fichiers</strong> :
+- ✅ Parquet, ORC (optimisés)
+- ✅ CSV, JSON
+- ✅ Avro
+- ✅ Texte brut</p>
+<p><strong>Streaming</strong> :
+- ✅ Kafka
+- ✅ Flume
+- ✅ Kinesis</p>
+<hr />
+<h3 id="6-tolerance-aux-pannes">🛡️ 6. Tolérance aux pannes</h3>
+<p><strong>Mécanisme</strong> : <strong>Lineage (lignage)</strong></p>
+<p><strong>Principe</strong> :
+- Spark enregistre la <strong>séquence de transformations</strong> (DAG - Directed Acyclic Graph)
+- En cas de perte de partition :
+  - Spark peut <strong>recalculer</strong> uniquement les partitions perdues
+  - Utilise le lineage pour retrouver la séquence de transformations</p>
+<p><strong>Avantage</strong> :
+- ✅ Pas besoin de réplication de données en mémoire
+- ✅ Récupération rapide en cas de panne</p>
+<hr />
+<h3 id="7-lazy-evaluation-evaluation-paresseuse">⚙️ 7. Lazy Evaluation (Évaluation paresseuse)</h3>
+<p><strong>Principe</strong> :
+- Les <strong>transformations</strong> ne sont <strong>pas exécutées immédiatement</strong>
+- Spark construit un <strong>plan d'exécution optimisé</strong> (DAG)
+- L'exécution réelle se déclenche uniquement lors d'une <strong>action</strong></p>
+<p><strong>Types d'opérations</strong> :</p>
+<p><strong>Transformations</strong> (lazy) :
+- <code>map()</code>, <code>filter()</code>, <code>groupBy()</code>, <code>join()</code>
+- Créent de nouveaux RDD/DataFrame
+- Ne déclenchent pas de calcul</p>
+<p><strong>Actions</strong> (eager) :
+- <code>count()</code>, <code>collect()</code>, <code>save()</code>, <code>show()</code>
+- Déclenchent l'exécution du DAG
+- Retournent un résultat ou écrivent sur disque</p>
+<p><strong>Avantage</strong> :
+- ✅ Optimisations globales (fusion d'opérations)
+- ✅ Réduction du nombre d'étapes</p>
+<hr />
+<h2 id="35-architecture-de-spark">3.5 Architecture de Spark</h2>
+<h3 id="composants-principaux">🏗️ Composants principaux</h3>
+<pre><code>┌────────────────────────────────────────────────────────────────┐
+│                         DRIVER PROGRAM                         │
+│                                                                │
+│  ┌──────────────────────────────────────────────────────┐     │
+│  │              SPARK CONTEXT                           │     │
+│  │  - Point d'entrée de l'application                   │     │
+│  │  - Connexion au cluster                              │     │
+│  │  - Planification des tâches (DAG)                    │     │
+│  └──────────────────────────────────────────────────────┘     │
+└────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌────────────────────────────────────────────────────────────────┐
+│                      CLUSTER MANAGER                           │
+│              (Standalone / YARN / Mesos / K8s)                 │
+│                                                                │
+│  - Allocation des ressources                                  │
+│  - Gestion des Executors                                      │
+└────────────────────────────────────────────────────────────────┘
+                              │
+                ┌─────────────┼─────────────┐
+                ▼             ▼             ▼
+        ┌──────────────┐ ┌──────────────┐ ┌──────────────┐
+        │  EXECUTOR 1  │ │  EXECUTOR 2  │ │  EXECUTOR 3  │
+        │              │ │              │ │              │
+        │  ┌────────┐  │ │  ┌────────┐  │ │  ┌────────┐  │
+        │  │Task 1  │  │ │  │Task 3  │  │ │  │Task 5  │  │
+        │  ├────────┤  │ │  ├────────┤  │ │  ├────────┤  │
+        │  │Task 2  │  │ │  │Task 4  │  │ │  │Task 6  │  │
+        │  └────────┘  │ │  └────────┘  │ │  └────────┘  │
+        │              │ │              │ │              │
+        │  [Cache]     │ │  [Cache]     │ │  [Cache]     │
+        └──────────────┘ └──────────────┘ └──────────────┘
+         Worker Node 1    Worker Node 2    Worker Node 3
+</code></pre>
+<h4 id="1-driver"><strong>1. Driver</strong></h4>
+<p><strong>Rôle</strong> : Cerveau de l'application Spark</p>
+<p><strong>Responsabilités</strong> :
+- Héberge le <strong>SparkContext</strong>
+- Transforme le code utilisateur en <strong>plan d'exécution</strong> (DAG)
+- <strong>Planifie</strong> les tâches
+- <strong>Distribue</strong> le travail aux Executors
+- <strong>Collecte</strong> les résultats</p>
+<hr />
+<h4 id="2-sparkcontext"><strong>2. SparkContext</strong></h4>
+<p><strong>Rôle</strong> : Point d'entrée de l'application</p>
+<p><strong>Fonctions</strong> :
+- Établit la <strong>connexion</strong> au cluster
+- Gère la <strong>configuration</strong> de l'application
+- Permet d'<strong>interagir</strong> avec le cluster</p>
+<hr />
+<h4 id="3-cluster-manager"><strong>3. Cluster Manager</strong></h4>
+<p><strong>Rôle</strong> : Gestionnaire de ressources du cluster</p>
+<p><strong>Types supportés</strong> :
+- <strong>Standalone</strong> : Gestionnaire simple intégré à Spark
+- <strong>YARN</strong> : Gestionnaire Hadoop
+- <strong>Mesos</strong> : Gestionnaire Apache Mesos
+- <strong>Kubernetes</strong> : Orchestrateur de conteneurs</p>
+<p><strong>Responsabilités</strong> :
+- <strong>Alloue</strong> les ressources (CPU, mémoire)
+- <strong>Démarre</strong> les Executors
+- <strong>Surveille</strong> l'état du cluster</p>
+<hr />
+<h4 id="4-executors"><strong>4. Executors</strong></h4>
+<p><strong>Rôle</strong> : Travailleurs qui exécutent les tâches</p>
+<p><strong>Caractéristiques</strong> :
+- Processus JVM s'exécutant sur les <strong>nœuds workers</strong>
+- Chaque Executor a sa propre <strong>mémoire</strong> et <strong>CPU</strong>
+- <strong>Exécutent les tâches</strong> envoyées par le Driver
+- <strong>Stockent les données</strong> en cache (si demandé)
+- <strong>Rapportent</strong> l'état des tâches au Driver</p>
+<blockquote>
+<p>🖼️ <strong>[Illustration suggérée]</strong> : Architecture Spark avec Driver au sommet, Cluster Manager au milieu, et plusieurs Executors en bas.</p>
+</blockquote>
+<hr />
+<h3 id="flux-dexecution-dune-application-spark">🔄 Flux d'exécution d'une application Spark</h3>
+<p><strong>Étapes</strong> :</p>
+<ol>
+<li>
+<p><strong>Création du SparkContext</strong>
+   - Le Driver démarre et crée le SparkContext
+   - Connexion au Cluster Manager</p>
+</li>
+<li>
+<p><strong>Allocation des ressources</strong>
+   - Le Cluster Manager alloue les ressources
+   - Démarre les Executors sur les nœuds workers</p>
+</li>
+<li>
+<p><strong>Distribution du code</strong>
+   - Le Driver envoie le code (JAR/Python) aux Executors</p>
+</li>
+<li>
+<p><strong>Construction du DAG</strong>
+   - Le Driver transforme le code en plan d'exécution (DAG)
+   - Optimisations appliquées</p>
+</li>
+<li>
+<p><strong>Planification des tâches</strong>
+   - Le DAG est divisé en <strong>stages</strong> et <strong>tasks</strong>
+   - Les tâches sont envoyées aux Executors</p>
+</li>
+<li>
+<p><strong>Exécution</strong>
+   - Les Executors exécutent les tâches
+   - Traitement des partitions de données</p>
+</li>
+<li>
+<p><strong>Collecte des résultats</strong>
+   - Les Executors renvoient les résultats au Driver
+   - Le Driver agrège et retourne le résultat final</p>
+</li>
+</ol>
+<blockquote>
+<p>🖼️ <strong>[Illustration suggérée]</strong> : Diagramme de séquence montrant les interactions Driver ↔ Cluster Manager ↔ Executors.</p>
+</blockquote>
+<hr />
+<h2 id="36-modules-de-lecosysteme-spark">3.6 Modules de l'écosystème Spark</h2>
+<pre><code>                    ╔═══════════════════════════╗
+                    ║      SPARK CORE           ║
+                    ║   (Moteur de base)        ║
+                    ║   - RDD                   ║
+                    ║   - Planification         ║
+                    ║   - Mémoire               ║
+                    ╚═══════════════════════════╝
+                              │
+        ┌─────────────────────┼─────────────────────┐
+        │                     │                     │
+        ▼                     ▼                     ▼
+┌───────────────┐     ┌───────────────┐     ┌───────────────┐
+│  SPARK SQL    │     │SPARK STREAMING│     │    MLlib      │
+│               │     │               │     │               │
+│ - DataFrame   │     │ - Micro-batch │     │ - ML Algos    │
+│ - Dataset     │     │ - Kafka       │     │ - Pipeline    │
+│ - Hive        │     │ - Flume       │     │ - Features    │
+└───────────────┘     └───────────────┘     └───────────────┘
+        │                     │                     │
+        └─────────────────────┼─────────────────────┘
+                              │
+                              ▼
+                      ┌───────────────┐
+                      │    GraphX     │
+                      │               │
+                      │ - Graphes     │
+                      │ - PageRank    │
+                      │ - Algos       │
+                      └───────────────┘
+</code></pre>
+<h3 id="spark-core">🔷 Spark Core</h3>
+<p><strong>Rôle</strong> : Moteur de base de Spark</p>
+<p><strong>Fonctionnalités</strong> :
+- Gestion de la mémoire
+- Planification des tâches
+- Interactions avec les systèmes de stockage
+- API RDD</p>
+<p><strong>Abstraction principale</strong> : <strong>RDD</strong> (Resilient Distributed Dataset)</p>
+<hr />
+<h3 id="spark-sql">📊 Spark SQL</h3>
+<p><strong>Rôle</strong> : Module pour traiter des données structurées</p>
+<p><strong>Fonctionnalités</strong> :
+- Requêtes <strong>SQL</strong> sur les données
+- API <strong>DataFrame</strong> et <strong>Dataset</strong>
+- Intégration avec <strong>Hive</strong>
+- Optimiseur <strong>Catalyst</strong> (optimisations automatiques)</p>
+<p><strong>Cas d'usage</strong> :
+- Requêtes interactives
+- ETL
+- Reporting</p>
+<p><strong>Exemple</strong> :</p>
+<pre><code class="language-python">df = spark.read.json(&quot;data.json&quot;)
+df.createOrReplaceTempView(&quot;people&quot;)
+result = spark.sql(&quot;SELECT name, age FROM people WHERE age &gt; 25&quot;)
+result.show()
+</code></pre>
+<hr />
+<h3 id="spark-streaming">🌊 Spark Streaming</h3>
+<p><strong>Rôle</strong> : Traitement de flux de données en temps réel</p>
+<p><strong>Principe</strong> :
+- Divise le flux continu en <strong>micro-batches</strong>
+- Traite chaque micro-batch comme un RDD/DataFrame</p>
+<p><strong>Sources supportées</strong> :
+- Kafka
+- Flume
+- Kinesis
+- Sockets TCP
+- Fichiers</p>
+<p><strong>Cas d'usage</strong> :
+- Analyse de logs en temps réel
+- Détection de fraudes
+- Monitoring d'applications
+- IoT</p>
+<p><strong>Exemple</strong> :</p>
+<pre><code class="language-python">from pyspark.streaming import StreamingContext
+
+ssc = StreamingContext(sc, 10)  # Batch interval de 10 secondes
+lines = ssc.socketTextStream(&quot;localhost&quot;, 9999)
+words = lines.flatMap(lambda line: line.split(&quot; &quot;))
+wordCounts = words.map(lambda word: (word, 1)).reduceByKey(lambda a, b: a + b)
+wordCounts.pprint()
+ssc.start()
+</code></pre>
+<hr />
+<h3 id="mllib-machine-learning-library">🤖 MLlib (Machine Learning Library)</h3>
+<p><strong>Rôle</strong> : Bibliothèque de Machine Learning distribuée</p>
+<p><strong>Algorithmes disponibles</strong> :</p>
+<p><strong>Classification</strong> :
+- Régression logistique
+- Naive Bayes
+- SVM, Random Forest, Gradient Boosting</p>
+<p><strong>Régression</strong> :
+- Régression linéaire
+- Régression de décision trees</p>
+<p><strong>Clustering</strong> :
+- K-means
+- GMM (Gaussian Mixture Model)</p>
+<p><strong>Réduction de dimensionnalité</strong> :
+- PCA (Principal Component Analysis)
+- SVD (Singular Value Decomposition)</p>
+<p><strong>Recommandation</strong> :
+- ALS (Alternating Least Squares)</p>
+<p><strong>Cas d'usage</strong> :
+- Systèmes de recommandation
+- Détection d'anomalies
+- Prédiction de churn
+- Classification d'images</p>
+<p><strong>Exemple</strong> :</p>
+<pre><code class="language-python">from pyspark.ml.classification import LogisticRegression
+
+lr = LogisticRegression(maxIter=10, regParam=0.01)
+model = lr.fit(trainingData)
+predictions = model.transform(testData)
+</code></pre>
+<hr />
+<h3 id="graphx">🕸️ GraphX</h3>
+<p><strong>Rôle</strong> : API pour le traitement de graphes</p>
+<p><strong>Fonctionnalités</strong> :
+- Représentation de <strong>graphes</strong> (sommets et arêtes)
+- Algorithmes de graphes distribués
+- Opérations sur graphes</p>
+<p><strong>Algorithmes disponibles</strong> :
+- <strong>PageRank</strong>
+- <strong>Connected Components</strong> (composantes connexes)
+- <strong>Triangle Counting</strong>
+- <strong>Shortest Paths</strong> (chemins les plus courts)</p>
+<p><strong>Cas d'usage</strong> :
+- Analyse de réseaux sociaux
+- Détection de communautés
+- Systèmes de recommandation basés sur graphes
+- Analyse de fraudes</p>
+<p><strong>Exemple</strong> :</p>
+<pre><code class="language-scala">import org.apache.spark.graphx._
+
+val graph: Graph[String, String] = ...
+val ranks = graph.pageRank(0.0001).vertices
+</code></pre>
+<hr />
+<h2 id="37-avantages-de-spark">3.7 Avantages de Spark</h2>
+<h3 id="comparaison-visuelle-mapreduce-vs-spark">✅ Comparaison visuelle : MapReduce vs Spark</h3>
+<h4 id="mapreduce-acces-disque-repete">MapReduce (Accès disque répété)</h4>
+<pre><code>Itération 1:
+HDFS ──▶ Map ──▶ Reduce ──▶ HDFS
+                                │
+Itération 2:                    ▼
+HDFS ──▶ Map ──▶ Reduce ──▶ HDFS
+                                │
+Itération 3:                    ▼
+HDFS ──▶ Map ──▶ Reduce ──▶ HDFS
+
+Temps total: ~10 minutes pour 3 itérations
+❌ Lecture/écriture disque à chaque itération
+</code></pre>
+<h4 id="spark-calcul-en-memoire">Spark (Calcul en mémoire)</h4>
+<pre><code>Chargement initial:
+HDFS ──▶ [RAM]
+          │
+          ├──▶ Transformation 1 ──▶ [RAM]
+          │                          │
+          ├──▶ Transformation 2 ◀────┘
+          │                          │
+          └──▶ Transformation 3 ◀────┘
+                    │
+                    ▼
+                  HDFS (résultat final)
+
+Temps total: ~10 secondes pour 3 itérations
+✅ Calcul en mémoire (jusqu'à 100x plus rapide)
+</code></pre>
+<h3 id="recapitulatif-des-avantages">✅ Récapitulatif des avantages</h3>
+<ol>
+<li>
+<p><strong>⚡ Vitesse</strong>
+   - Jusqu'à 100x plus rapide que MapReduce (en mémoire)
+   - Jusqu'à 10x plus rapide (sur disque)</p>
+</li>
+<li>
+<p><strong>🎯 Facilité d'utilisation</strong>
+   - APIs de haut niveau (DataFrame, Dataset)
+   - Support de multiples langages
+   - Code concis et expressif</p>
+</li>
+<li>
+<p><strong>🌐 Framework unifié</strong>
+   - Batch, streaming, ML, graphes dans un seul framework
+   - Réutilisation du code</p>
+</li>
+<li>
+<p><strong>🔌 Flexibilité</strong>
+   - Support de multiples sources de données
+   - Compatibilité avec Hadoop
+   - Déploiement flexible (Standalone, YARN, Mesos, Kubernetes)</p>
+</li>
+<li>
+<p><strong>📈 Scalabilité</strong>
+   - De 1 machine à des milliers de nœuds
+   - Gestion automatique de la parallélisation</p>
+</li>
+<li>
+<p><strong>🛡️ Tolérance aux pannes</strong>
+   - Récupération automatique via lineage
+   - Pas de perte de données</p>
+</li>
+</ol>
+<hr />
+<h2 id="38-cas-dusage-de-spark-dans-lindustrie">3.8 Cas d'usage de Spark dans l'industrie</h2>
+<h3 id="netflix">🎬 <strong>Netflix</strong></h3>
+<ul>
+<li>Recommandations personnalisées</li>
+<li>Analyse de logs de streaming</li>
+<li>Optimisation de la qualité vidéo</li>
+</ul>
+<h3 id="uber">🚗 <strong>Uber</strong></h3>
+<ul>
+<li>Analyse en temps réel des trajets</li>
+<li>Prédiction de la demande</li>
+<li>Optimisation des prix (surge pricing)</li>
+</ul>
+<h3 id="airbnb">🏠 <strong>Airbnb</strong></h3>
+<ul>
+<li>Système de recommandation de logements</li>
+<li>Détection de fraudes</li>
+<li>Optimisation des prix</li>
+</ul>
+<h3 id="ebay">💳 <strong>eBay</strong></h3>
+<ul>
+<li>Détection de fraudes</li>
+<li>Recommandations de produits</li>
+<li>Analyse comportementale</li>
+</ul>
+<h3 id="yahoo">🌐 <strong>Yahoo!</strong></h3>
+<ul>
+<li>Personnalisation du contenu</li>
+<li>Analyse de logs web</li>
+<li>Machine Learning à grande échelle</li>
+</ul>
+<hr />
+<h1 id="conclusion">🎓 Conclusion</h1>
+<p>Ce cours a couvert les <strong>fondamentaux du Big Data</strong> et les principaux outils de l'écosystème :</p>
+<ol>
+<li><strong>Introduction au Big Data</strong> : Les 5 V, sources de données, applications</li>
+<li><strong>Hadoop HDFS</strong> : Stockage distribué, architecture, commandes</li>
+<li><strong>MapReduce</strong> : Paradigme de traitement parallèle</li>
+<li><strong>YARN</strong> : Gestionnaire de ressources moderne</li>
+<li><strong>Pig, Hive, Sqoop, Flume</strong> : Outils de l'écosystème Hadoop</li>
+<li><strong>Apache Spark</strong> : Framework unifié rapide et flexible</li>
+</ol>
+<p><strong>Points clés à retenir</strong> :</p>
+<p>✅ Le Big Data nécessite des architectures <strong>distribuées</strong> et <strong>évolutives</strong></p>
+<p>✅ <strong>Hadoop</strong> a révolutionné le stockage et le traitement de données massives</p>
+<p>✅ <strong>Spark</strong> représente l'évolution vers des traitements <strong>plus rapides</strong> et <strong>plus flexibles</strong></p>
+<p>✅ L'écosystème Big Data est <strong>riche</strong> et chaque outil a son rôle spécifique</p>
+<p>✅ Le choix de la technologie dépend du <strong>cas d'usage</strong> et des <strong>contraintes</strong></p>
+<hr />
+<h1 id="pour-aller-plus-loin">📚 Pour aller plus loin</h1>
+<p><strong>Documentation officielle</strong> :
+- Hadoop : https://hadoop.apache.org/
+- Spark : https://spark.apache.org/
+- Hive : https://hive.apache.org/
+- Pig : https://pig.apache.org/</p>
+<p><strong>Certifications</strong> :
+- Cloudera Certified Developer
+- Databricks Spark Certification
+- AWS Big Data Specialty</p>
+<p><strong>Plateformes d'apprentissage</strong> :
+- Coursera
+- edX
+- Udemy</p>
+<hr />
+<p><strong>🎉 Fin du résumé</strong></p>
+<blockquote>
+<p>💡 Ce résumé couvre l'essentiel du cours. Pour maîtriser ces technologies, <strong>la pratique est essentielle</strong> !</p>
+</blockquote>
+<hr />
+<h1 id="annexe-schemas-complementaires">📊 Annexe : Schémas complémentaires</h1>
+<h2 id="rdd-workflow-transformations-et-actions">RDD - Workflow Transformations et Actions</h2>
+<pre><code>┌────────────────────────────────────────────────────────────┐
+│                    RDD WORKFLOW                            │
+└────────────────────────────────────────────────────────────┘
+
+INPUT DATA (HDFS)
+       │
+       ▼
+┌─────────────┐
+│   RDD 1     │ ◀── textFile(&quot;data.txt&quot;)
+└─────────────┘
+       │
+       │ .map()                    ┐
+       ▼                           │
+┌─────────────┐                    │
+│   RDD 2     │                    │  TRANSFORMATIONS
+└─────────────┘                    │  (Lazy - pas d'exécution)
+       │                           │
+       │ .filter()                 │
+       ▼                           │
+┌─────────────┐                    │
+│   RDD 3     │                    ┘
+└─────────────┘
+       │
+       │ .count()                  ┐
+       ▼                           │  ACTIONS
+┌─────────────┐                    │  (Déclenchent l'exécution)
+│   RESULT    │                    ┘
+└─────────────┘
+</code></pre>
+<hr />
+<h2 id="spark-sql-architecture-catalyst">Spark SQL - Architecture Catalyst</h2>
+<pre><code>┌────────────────────────────────────────────────────────────┐
+│                      UTILISATEUR                           │
+│                                                            │
+│  SQL Query / DataFrame API / Dataset API                  │
+└────────────────────────────────────────────────────────────┘
+                            │
+                            ▼
+┌────────────────────────────────────────────────────────────┐
+│                   CATALYST OPTIMIZER                       │
+│                                                            │
+│  1. ANALYSE           2. PLAN LOGIQUE                     │
+│     - Validation          - Optimisations                 │
+│     - Résolution          - Règles logiques               │
+│                                                            │
+│  3. PLAN PHYSIQUE     4. GÉNÉRATION CODE                  │
+│     - Choix stratégies    - Code Java/Scala               │
+│     - Estimations coût    - Tungsten                      │
+└────────────────────────────────────────────────────────────┘
+                            │
+                            ▼
+┌────────────────────────────────────────────────────────────┐
+│                      SPARK CORE                            │
+│                                                            │
+│              Exécution sur le cluster                     │
+│              (RDD + Tungsten)                             │
+└────────────────────────────────────────────────────────────┘
+</code></pre>
+<hr />
+<h2 id="spark-streaming-micro-batches">Spark Streaming - Micro-batches</h2>
+<pre><code>FLUX CONTINU DE DONNÉES
+────────────────────────────────────────────────────▶
+│     │     │     │     │     │     │     │     │
+│  E1 │  E2 │  E3 │  E4 │  E5 │  E6 │  E7 │  E8 │...
+│     │     │     │     │     │     │     │     │
+─┬────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴───
+ │
+ │ Découpage en micro-batches (ex: toutes les 5 secondes)
+ │
+ ▼
+┌──────────────┐  ┌──────────────┐  ┌──────────────┐
+│ Batch 1      │  │ Batch 2      │  │ Batch 3      │
+│              │  │              │  │              │
+│ E1, E2, E3   │  │ E4, E5, E6   │  │ E7, E8, E9   │
+└──────────────┘  └──────────────┘  └──────────────┘
+       │                 │                 │
+       ▼                 ▼                 ▼
+  Traitement       Traitement        Traitement
+  (RDD/DF)         (RDD/DF)          (RDD/DF)
+       │                 │                 │
+       ▼                 ▼                 ▼
+   Résultat         Résultat          Résultat
+   Batch 1          Batch 2           Batch 3
+</code></pre>
+<hr />
+<h2 id="architecture-lambda-vs-kappa">Architecture Lambda vs Kappa</h2>
+<h3 id="architecture-lambda">Architecture Lambda</h3>
+<pre><code>         ┌─────────────────┐
+         │  DATA SOURCES   │
+         └────────┬────────┘
+                  │
+         ┌────────┴────────┐
+         │                 │
+         ▼                 ▼
+┌────────────────┐  ┌──────────────┐
+│  BATCH LAYER   │  │ SPEED LAYER  │
+│                │  │              │
+│ - MapReduce    │  │ - Spark      │
+│ - Précis       │  │ - Approximatif│
+│ - Lent         │  │ - Rapide     │
+└────────┬───────┘  └──────┬───────┘
+         │                 │
+         └────────┬────────┘
+                  ▼
+         ┌─────────────────┐
+         │ SERVING LAYER   │
+         │                 │
+         │ - Agrégation    │
+         │ - Exposition    │
+         └─────────────────┘
+
+❌ Complexe: 2 systèmes à maintenir
+</code></pre>
+<h3 id="architecture-kappa">Architecture Kappa</h3>
+<pre><code>         ┌─────────────────┐
+         │  DATA SOURCES   │
+         └────────┬────────┘
+                  │
+                  ▼
+         ┌─────────────────┐
+         │  STREAM LAYER   │
+         │                 │
+         │ - Kafka/Spark   │
+         │ - Traitement    │
+         │   continu       │
+         └────────┬────────┘
+                  │
+                  ▼
+         ┌─────────────────┐
+         │ SERVING LAYER   │
+         │                 │
+         │ - Temps réel    │
+         └─────────────────┘
+
+✅ Simple: 1 seul système
+</code></pre>
+<hr />
+<h2 id="sqoop-importexport">Sqoop - Import/Export</h2>
+<h3 id="import-sql-hdfs">Import : SQL → HDFS</h3>
+<pre><code>┌──────────────────┐
+│  BASE DE DONNÉES │
+│     MySQL        │
+│                  │
+│  Table: clients  │
+│  ┌──────────────┐│
+│  │ ID │ Nom     ││
+│  ├────┼─────────┤│
+│  │ 1  │ Alice   ││
+│  │ 2  │ Bob     ││
+│  │ 3  │ Charlie ││
+│  └────┴─────────┘│
+└────────┬─────────┘
+         │
+         │ sqoop import
+         │ (via JDBC)
+         │
+         ▼
+┌──────────────────────────┐
+│   SQOOP (MapReduce)      │
+│                          │
+│  ┌────────┐ ┌────────┐  │
+│  │Mapper 1│ │Mapper 2│  │
+│  │ID 1-50 │ │ID 51-100│ │
+│  └────────┘ └────────┘  │
+└────────┬─────────────────┘
+         │
+         ▼
+┌──────────────────┐
+│       HDFS       │
+│                  │
+│ /user/data/      │
+│   clients/       │
+│     part-m-00000 │
+│     part-m-00001 │
+└──────────────────┘
+</code></pre>
+<hr />
+<h2 id="evolution-des-abstractions-spark">Évolution des abstractions Spark</h2>
+<pre><code>2011                  2013                  2015
+  │                     │                     │
+  ▼                     ▼                     ▼
+┌─────┐              ┌─────┐              ┌─────┐
+│ RDD │              │ DF  │              │ DS  │
+└─────┘              └─────┘              └─────┘
+
+Caractéristiques:
+
+RDD (2011)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✓ Contrôle total bas niveau
+✓ Traitement distribué
+✓ Tolérance aux pannes
+✗ Pas d'optimisations automatiques
+✗ Code verbeux
+
+DataFrame (2013)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✓ API haut niveau
+✓ Optimisations Catalyst
+✓ Structure en colonnes
+✓ Compatible multi-langages
+✗ Pas de type safety (Scala/Java)
+
+Dataset (2015)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✓ Combinaison RDD + DataFrame
+✓ Type safety (compile-time)
+✓ Optimisations Catalyst
+✓ API orientée objet
+✗ Seulement Scala/Java
+</code></pre>
+<hr />
+<h2 id="lazy-evaluation-dag-directed-acyclic-graph">Lazy Evaluation - DAG (Directed Acyclic Graph)</h2>
+<pre><code>CODE SPARK:
+──────────
+val rdd1 = sc.textFile(&quot;data.txt&quot;)      │
+val rdd2 = rdd1.map(line =&gt; line.split) │ TRANSFORMATIONS
+val rdd3 = rdd2.filter(_.length &gt; 5)    │ (Pas d'exécution)
+val count = rdd3.count()                │ ACTION (Exécution!)
+
+CONSTRUCTION DU DAG:
+────────────────────
+
+┌──────────────┐
+│ textFile()   │ Stage 1
+└──────┬───────┘
+       │
+       ▼
+┌──────────────┐
+│ map()        │
+└──────┬───────┘
+       │
+       ▼
+┌──────────────┐
+│ filter()     │
+└──────┬───────┘
+       │
+       │ ← Optimisations (fusion map + filter)
+       ▼
+┌──────────────┐
+│ count()      │ ← Déclenche l'exécution
+└──────────────┘
+
+AVANTAGES:
+✓ Optimisations globales
+✓ Fusion d'opérations
+✓ Réduction du shuffle
+✓ Exécution efficace
+</code></pre>
+<hr />
+<h2 id="hdfs-federation-federation">HDFS Federation (Fédération)</h2>
+<pre><code>┌──────────────────────────────────────────────────────────┐
+│              HDFS FEDERATED ARCHITECTURE                 │
+└──────────────────────────────────────────────────────────┘
+
+┌────────────┐  ┌────────────┐  ┌────────────┐
+│NameNode 1  │  │NameNode 2  │  │NameNode 3  │
+│            │  │            │  │            │
+│Namespace 1 │  │Namespace 2 │  │Namespace 3 │
+│            │  │            │  │            │
+│/project1   │  │/project2   │  │/project3   │
+│/logs1      │  │/logs2      │  │/logs3      │
+└─────┬──────┘  └─────┬──────┘  └─────┬──────┘
+      │               │               │
+      └───────────────┼───────────────┘
+                      │
+        ┌─────────────┴─────────────┐
+        │                           │
+        ▼                           ▼
+┌──────────────┐            ┌──────────────┐
+│ DATANODE 1   │            │ DATANODE 2   │
+│              │            │              │
+│ Blocs NS1    │            │ Blocs NS1    │
+│ Blocs NS2    │            │ Blocs NS2    │
+│ Blocs NS3    │            │ Blocs NS3    │
+└──────────────┘            └──────────────┘
+
+      POOL PARTAGÉ DE DATANODES
+
+AVANTAGES:
+✓ Scalabilité (plusieurs NameNodes)
+✓ Isolation des namespaces
+✓ Performance améliorée
+</code></pre>
+<hr />
+<h2 id="pig-latin-pipeline-de-traitement">Pig Latin - Pipeline de traitement</h2>
+<pre><code>┌──────────────────────────────────────────────────────┐
+│             PIG LATIN WORKFLOW                       │
+└──────────────────────────────────────────────────────┘
+
+1. LOAD (Chargement)
+   ─────────────────
+   data = LOAD 'input.txt' AS (name:chararray, age:int);
+
+   ▼
+
+2. FILTER (Filtrage)
+   ─────────────────
+   adults = FILTER data BY age &gt;= 18;
+
+   ▼
+
+3. GROUP (Regroupement)
+   ─────────────────────
+   grouped = GROUP adults BY age;
+
+   ▼
+
+4. FOREACH (Transformation)
+   ─────────────────────────
+   result = FOREACH grouped GENERATE group, COUNT(adults);
+
+   ▼
+
+5. STORE (Sauvegarde)
+   ───────────────────
+   STORE result INTO 'output';
+
+
+COMPILATION:
+────────────
+Script Pig Latin
+      │
+      ▼
+┌──────────────┐
+│   Parser     │
+└──────┬───────┘
+       ▼
+┌──────────────┐
+│  Optimizer   │
+└──────┬───────┘
+       ▼
+┌──────────────┐
+│  Compiler    │
+└──────┬───────┘
+       ▼
+Jobs MapReduce
+(ou Tez/Spark)
+</code></pre>
+<hr />
+<h2 id="hive-transformation-sql-mapreduce">Hive - Transformation SQL → MapReduce</h2>
+<pre><code>┌──────────────────────────────────────────────────────┐
+│              HIVE QUERY PROCESSING                   │
+└──────────────────────────────────────────────────────┘
+
+REQUÊTE SQL:
+────────────
+SELECT department, AVG(salary)
+FROM employees
+WHERE age &gt; 30
+GROUP BY department;
+
+   ▼
+
+┌──────────────┐
+│   PARSER     │  Analyse syntaxique
+└──────┬───────┘
+       ▼
+┌──────────────┐
+│   ANALYZER   │  Validation du schéma
+└──────┬───────┘  (via Metastore)
+       ▼
+┌──────────────┐
+│  OPTIMIZER   │  Optimisations logiques
+└──────┬───────┘
+       ▼
+┌──────────────┐
+│  COMPILER    │  Génération du plan
+└──────┬───────┘
+       ▼
+
+PLAN D'EXÉCUTION MAPREDUCE:
+────────────────────────────
+
+Job 1: Filter (age &gt; 30)
+  Map: Lire HDFS → Filtrer lignes
+  Reduce: -
+
+Job 2: Group By + Aggregation
+  Map: Émettre (dept, salary)
+  Shuffle: Regrouper par dept
+  Reduce: Calculer AVG
+
+   ▼
+
+Résultat final dans HDFS
+</code></pre>
+<hr />
+<h2 id="timeline-big-data-evolution-des-technologies">Timeline Big Data - Évolution des technologies</h2>
+<pre><code>2003  2004  2006  2009  2011  2013  2015  2018  2020  2025
+ │     │     │     │     │     │     │     │     │     │
+ ▼     ▼     ▼     ▼     ▼     ▼     ▼     ▼     ▼     ▼
+
+2003: Google GFS
+      │
+2004: Google MapReduce
+      │
+2006: Hadoop 1.0
+      │ Doug Cutting + Yahoo!
+      │
+2009: Hive, Pig
+      │ Cloudera fondée
+      │
+2011: HBase mature
+      │ Hortonworks fondée
+      │
+2013: Hadoop 2.0 (YARN)
+      │ Spark devient Apache
+      │
+2015: Spark 1.6
+      │ Datasets
+      │
+2018: Hadoop 3.0
+      │ Erasure Coding
+      │
+2020: Kubernetes + Big Data
+      │
+2025: Cloud-native Big Data
+      │ Serverless analytics
+      │ AI-optimized processing
+
+┌─────────────────────────────────────────┐
+│  TENDANCES ACTUELLES (2025)             │
+├─────────────────────────────────────────┤
+│ ✓ Migration vers le Cloud              │
+│ ✓ Lakehouse architectures               │
+│ ✓ Streaming-first                       │
+│ ✓ ML/AI integration                     │
+│ ✓ Real-time analytics                   │
+│ ✓ Data Mesh                             │
+└─────────────────────────────────────────┘
+</code></pre>
+<hr />
+<h2 id="vue-densemble-big-data">📌 Vue d'ensemble Big Data</h2>
+<pre><code>╔═══════════════════════════════════════════════════════════╗
+║                    BIG DATA - VUE D'ENSEMBLE              ║
+╚═══════════════════════════════════════════════════════════╝
+
+┌────────────────┐       ┌────────────────┐
+│  DONNÉES       │       │  TECHNOLOGIES  │
+│                │       │                │
+│ • Volume       │◀─────▶│ • Hadoop HDFS  │
+│ • Vélocité     │       │ • MapReduce    │
+│ • Variété      │       │ • YARN         │
+│ • Véracité     │       │ • Spark        │
+│ • Valeur       │       │ • NoSQL        │
+└────────────────┘       └────────────────┘
+        │                        │
+        └────────┬───────────────┘
+                 ▼
+        ┌────────────────┐
+        │  APPLICATIONS  │
+        │                │
+        │ • Analytics    │
+        │ • ML/AI        │
+        │ • Temps réel   │
+        │ • IoT          │
+        └────────────────┘
+</code></pre>
+<hr />
+<p><strong>🎉 Fin du document complet</strong></p>
+<blockquote>
+<p>📘 Ce résumé complet intègre <strong>explications détaillées</strong> + <strong>schémas visuels</strong> pour une compréhension optimale du Big Data.</p>
+<p>💡 Les schémas ASCII sont optimisés pour être visualisés dans un éditeur avec police monospace (Courier, Consolas, Monaco).</p>
+</blockquote>
+    </div>
+</body>
+</html>
